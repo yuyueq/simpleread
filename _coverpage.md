@@ -5,7 +5,7 @@
 
 [常用资源](https://www.yuque.com/yuyueq/resource)
 [GitHub](https://github.com/yuyueq/simple_read)
-[开始阅读](#simple-read)
+[开始阅读](#docsify-demo)
 
 
 
