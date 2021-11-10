@@ -3,9 +3,9 @@
 </p>
 <h1 align="center">The Road of Learning 余月七</h1>
 
-[常用资源](https://shimo.im/docs/MuiACIg1HlYfVxrj/)
+[常用资源](https://www.yuque.com/yuyueq/resource)
 [GitHub](https://github.com/yuyueq/simpl_read)
-[开始阅读](#docsify-demo)
+[开始阅读](#simple_read)
 
 
 
