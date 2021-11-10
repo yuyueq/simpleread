@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2481424715,2807309609&fm=26&gp=0.jpg" width="100" height="100"/>
+<img src="https://img.imgdb.cn/item/604c411b5aedab222c2a68f4.jpg" width="100" height="100"/>
 </p>
 <h1 align="center">The Road of Learning 余月七</h1>
 
