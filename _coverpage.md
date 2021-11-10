@@ -5,7 +5,7 @@
 
 [常用资源](https://www.yuque.com/yuyueq/resource)
 [GitHub](https://github.com/yuyueq/simpl_read)
-[开始阅读](#simple_read)
+[开始阅读](#The Road of Learning 余月七)
 
 
 
