@@ -4,7 +4,7 @@
 <h1 align="center">The Road of Learning 余月七</h1>
 
 [常用资源](https://www.yuque.com/yuyueq/resource)
-[GitHub](https://github.com/yuyueq/simpl_read)
+[GitHub](https://github.com/yuyueq/simple_read)
 [开始阅读](#simple_read)
 
 
