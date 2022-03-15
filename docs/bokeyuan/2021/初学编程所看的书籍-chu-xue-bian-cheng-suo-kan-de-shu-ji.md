@@ -1,0 +1,183 @@
+---
+title: 初学编程所看的书籍
+date: 2020-08-12 11:32:51.0
+updated: 2022-01-21 11:34:45.243
+url: /archives/chu-xue-bian-cheng-suo-kan-de-shu-ji
+categories: 默认分类 | Java | MySQL | 计算机 | Linux | 专业
+tags: 资源 | 学习记录
+---
+
+# 前言
+
+## *注：以下内容仅属个人观点，没有任何推销、打广告意图！！！*
+
+![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20200812142843153-1234515376.jpg)
+
+
+## 注：可直接在“目录”中寻找自己想要的书籍
+
+<font size =4>**嗯。。。。。，虽然接触编程的时间不是很长，但深刻觉得有些书还是看着不错的**</font>
+
+<font size = 4>**个人感觉是比学校的教材比较跟容易理解与运用；当然仅仅是个人观点**</font>
+
+***
+
+<font size = 4>**以下的资源都在我的百度网盘中，每一本书的链接也已经放好了，最后的总文件链接也有；*为什么选择百度网盘？至于这个问题，我觉得在我个人看来百度网盘虽然限速很严重，但是毕竟一个软件要生存也是需要一些资本的，所以还是不要有太多的怨气。毕竟国内的大多数人都在用百度网盘，而且大多数资源也放在百度网盘上着！，所以我们提取资源到自己的网盘上也比较方便，若要用别家的网盘，虽然速度快，但给的空间也不是很多，而且可能要许多人重新注册一个，使得整个过程有点繁杂。***</font>
+
+<font size=4>**目前我还没有发现比较主流而且好一点的网盘软件，如果有，可以给我推荐一下。**</font>
+
+***
+
+# 计算机硬核知识
+
+### 程序员必知的硬核知识：
+
+<font size=4>链接：https://pan.baidu.com/s/1G3MIwpUwj3zQ2TLncvfPGw 
+提取码：e2ga
+</font>
+
+### 操作系统
+
+<font size=4>链接：https://pan.baidu.com/s/1k0Ltq38p6oTh-HqEkJVdmQ 
+提取码：7m79
+</font>
+
+### 网络是怎样连接起来的：
+
+<font size=4>链接：https://pan.baidu.com/s/1JnFhHG7iZTnWayp60NYuWA 
+提取码：oogr</font>
+
+### 《深入理解计算机操作系统》
+
+<font size=4>链接：https://pan.baidu.com/s/1eqq7mGAwUThDVbKzwMQlZw 
+提取码：pyis</font>
+
+***
+
+# C语言
+
+### 《C Primer Plus》：
+
+<font size=4>链接：https://pan.baidu.com/s/1nK2XFo_51xQpxElxtoDGyw    提取码：o6a3  </font>
+
+### 《经典C程序100例》：
+
+<font size=4>链接：https://pan.baidu.com/s/1RGmxrxCJaCTGf_SKxvNFSw    提取码：x2om </font>
+
+***
+
+# 数据结构
+
+### 《大话数据结构》：
+
+<font size=4>链接：https://pan.baidu.com/s/1rQeEcMMhQt5hc-VJ_Qx0vA   提取码：kvy0</font>
+
+***
+
+# 数据结构与算法
+
+### 《C语言篇》：
+
+<font size=4>链接：https://pan.baidu.com/s/1xC9FVACDur6DmbYuc7dX2w   提取码：ypmi</font>
+
+### 《Java篇》：
+
+<font size=4>链接：https://pan.baidu.com/s/1ZMQM2W1ctsSUgBVgIZshyw 
+提取码：x4d5</font>
+
+***
+
+# Java
+
+### 《JDK_API》：
+
+<font size=4>链接：https://pan.baidu.com/s/1Tu102-vFDM3Rs5YsNf9Wmw 
+提取码：s0d6</font>
+
+### 《Java核心技术》：
+
+<font size=4>链接：https://pan.baidu.com/s/13QcPil5pdCLdRamW3TfI_Q 
+提取码：sx7a</font>
+
+### 《Java从小白到大牛》：
+
+<font size=4>链接：https://pan.baidu.com/s/12x1o9-Bgvg0jkQBaU2wW_g  提取码：oxif</font>
+
+### 《小白的Java自学课》：
+
+<font size=4>链接：https://pan.baidu.com/s/1AXkOi4jBZitksXjE9p182Q  提取码：lls6</font>
+
+### 《Java编程思想》：
+
+<font size=4>链接：https://pan.baidu.com/s/1kof2XAV9y3L08oGW436u1w  提取码：2z36</font>
+
+### 《阿里开发手册泰山版》：
+
+<font size=4>链接：https://pan.baidu.com/s/1iUACJmo1B48c1FqV5amkxQ  提取码：nbmd</font>
+
+***
+
+# MySql
+
+### 《深入浅出MySql》：
+
+<font size=4>链接：https://pan.baidu.com/s/1IQHuoeaBD5MWuSD3OYPa_A 
+提取码：cdvp 
+</font>
+
+***
+
+# Linux
+
+### 《Linux常用命令大全》：
+
+<font size=4>链接：https://pan.baidu.com/s/1tYGXG4V80jIRmZQjALUljQ 提取码：71p8 </font>
+
+### 《Linux就该这么学》：
+
+<font size=4>链接：https://www.linuxprobe.com/</font>
+
+### 《Linux命令大全》(手册)：
+
+<font size=4>链接：https://www.linuxcool.com/</font>
+
+### 《鸟哥的Linux私房菜》：
+
+<font size=4>链接：https://pan.baidu.com/s/1sW_A70TgRd1nqYCk92iulw 
+提取码：ntu9 </font>
+
+***
+
+# 算法
+
+### 《算法》(第四版)：
+
+<font size=4>链接：https://pan.baidu.com/s/1nLdvUw-N-VEySeJVqaiqqQ 
+提取码：uymc</font>
+
+### 《算法图解》：
+
+<font size=4>链接：https://pan.baidu.com/s/1Pzaup7N9ywwgsdLkBaa1rg 
+提取码：8tul</font>
+
+***
+
+# Git
+
+### 《Pro Git》中文版：
+
+<font size=4>链接：https://pan.baidu.com/s/1ja-_cs81BgmJfYqA1JBiaA 
+提取码：jgtj</font>
+
+***
+
+
+
+# 最后
+
+**<font size=4>怎么说呢，这些书籍都是我从网上偶然间看到的，然后就翻着看了一下，个人感觉还是比较有实用性的；看着看着就觉得一些书还不错，就保存到了网盘上。在这里分享出来，也是为了方便自己以后可以更快的找到这些资源，毕竟时间长有的东西不记就忘掉了，而且有时候清理一下一些文件的时候就不自觉的清理掉。</font>**
+
+**<font size=4>当然这是网上的资源，只不过我自己保存了下来，如果其中有侵权的资源，请作者联系我删除！公告栏有我个人微信二维码</font>**
+
+**<font size=4>还有就是，虽然看的是电子书，但是我觉得还是没纸质版的更好一点，当然了，这些资源平时想看的时候或者要在电脑上查东西的时候，还是比较方便的吧！最好是可以借到或者买到一些你在这上面的几本书中喜欢的或者觉得对自己有用的书买下来；如果你还有想要的各种各样的资源但却苦苦没有找到，你也可以加我微信问我，虽然不知道有没有，但能给你提供这方面的帮助还是很开心的。</font>**
+![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20200812143520097-640840523.jpg)

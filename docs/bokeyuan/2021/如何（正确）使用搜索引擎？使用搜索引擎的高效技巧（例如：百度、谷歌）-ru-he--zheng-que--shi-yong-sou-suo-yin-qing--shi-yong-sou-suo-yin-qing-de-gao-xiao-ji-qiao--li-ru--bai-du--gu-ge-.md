@@ -1,0 +1,123 @@
+---
+title: 如何（正确）使用搜索引擎？使用搜索引擎的高效技巧（例如：百度、谷歌）
+date: 2020-07-14 17:56:42.0
+updated: 2022-01-20 17:57:24.729
+url: /archives/ru-he--zheng-que--shi-yong-sou-suo-yin-qing--shi-yong-sou-suo-yin-qing-de-gao-xiao-ji-qiao--li-ru--bai-du--gu-ge-
+categories: 计算机
+tags: 学习记录 | 问题记录
+---
+
+前言
+
+**提起这个搜索引擎，我们对它就有三种级别的认识**
+
+- **第一种：完全不知道“搜索引擎”是什么或者是“我只知道浏览器”**
+- **第二种：知道搜索引擎，但不知道这玩意还有使用方式！**
+
+- **第三种：知道搜索引擎并知道怎么使用的大量相关知识。**
+
+------
+
+***而最近我发现，周围的小伙伴好像都不是对这个有太多了解和正确的认识！***
+
+------
+
+那么如何正确并且高效的使用这个所谓的“搜索引擎”呢？
+
+跟着我来具体了解并且学习一下简单的知识吧！
+
+------
+
+# 第一点：怎样选取“搜索引擎”？
+
+- **国内的话 首推 的其实是 微软 的“Bing”搜索**
+- ***cn.bing.com***
+
+Bing 是由微软公司推出的一款网络搜索引擎，它和百度、Google 这类搜索引擎差不多，功能的话就是，除了网页搜索，还有图片，视频，同时也有学术，词典，地图等搜索内容；那么推它一个重要原因就是它几乎没有广告，而且它的主页每天都有一张高清美图，这样可以防止我们审美疲劳；
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672374061-47794c26-dcff-45d2-bd8e-b5726b72fbea.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672373601-7a632655-33a5-42d8-be5c-67f50ec64685.png)
+
+那么相比于百度是不是广告还有页面更胜一筹呢!
+
+而且用它来替代谷歌也挺好，毕竟谷歌国内是无法正常访问的
+
+- **其次的话推荐一个不大众化的一款搜索引擎——”多吉搜索“**
+- ***dogedoge.com***
+
+Doge Doge，又名“多吉搜索”，是一款由个人开发者主导的搜索引擎产品，倡导不追踪用户隐私，以返回恰当的结果为目的，倡导“不误导”。
+
+由于多吉搜索倡导的“不追踪隐私”和“不误导”，在这个日渐浮躁的互联网环境宛若甘霖，一下子就引起了我的注意。
+
+在略显简陋的logo，和界面明显“借鉴”其他搜索引擎（[DuckDuckGo](https://duckduckgo.com/)）的背后，你很难想象，这是我目前体验过的搜索结果最好的中文搜索引擎。
+
+ 但很多东西，就是因为出人意料才精彩。
+
+***而我的话也在使用这款国内的搜索引擎配合谷歌的使用，目前我并未发现改搜索引擎出现问题。***
+
+## 题外话——Google
+
+**谷歌 搜索引擎其实说句实话是 真的 好用，真的是有点 强；但要记住 科学上网 哦！**
+
+
+
+# 第二点：进入正题
+
+下面就以“百度”为例，毕竟国内大多数人是用的“百度”
+
+## 高级检索命令如下：
+
+### 第一个：site
+
+​           "site:域名 搜索内容"            ： 这个命令就是用来搜索某个域名在搜索引擎下的所有页面;              注意：要加上中间的空格符号 举个例子：         site：cnblogs.com java内存划分
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672373736-2c57cd2d-64c2-483a-bbf4-c9f96b508d2f.png)
+
+### 第二个：双引号
+
+​          "   "  （双引号中为搜索内容）           ：搜索出完整包含双引号中关键词的所有页面；精确搜索 举个例子：           “java多线程”
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672373614-006918b2-3dd1-4178-89a9-48bc0a75557c.png)
+
+### 第三个：intitle（类似的还有inurl）
+
+​      intitle：搜索内容       ：搜索出所有标题里有 搜索内容 的结果        举个例子：         intitle：linux子系统
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672373604-d1293300-6165-4b79-975e-aa085ab62038.png)
+
+​      inurl：内容       ：检索出来的页面URL中必须包含我们的搜索内容        举个例子：         inurl：java
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672374412-70872fc1-2457-40ed-9afa-f72127084c26.png)![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672374469-3017bd07-8130-4814-9d98-a7ad33a8c8a9.png)
+
+### 第三个：filetype
+
+​      filetype：文件格式 关键词       ：这个命令是用来搜索特定文件格式的文件        举个例子：         filetype：pdf java核心技术
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672374548-a6f719c2-e3d2-473d-ae6b-aa8a5c4c0214.png)
+
+### 第四个：排除关键字
+
+​      搜索内容+“空格”+“减号”+要排除的关键字       ：为了避免我们平时有时候搜东西出现“大众化”        举个例子       ：锤子 -手机         苹果 -手机         注意：强调的空格不要丢，不然这个命令不起作用
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672374972-7c4c00f4-734d-449c-bbae-ca87362cd372.png)![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672375247-f12905de-ba47-4da1-9ce2-70ec716a0ac5.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672375302-9d640259-dab3-4543-b785-533169f09248.png)![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672375413-1d9859b4-2c97-491e-9d8a-aa4a6d6de4bc.png)
+
+### 第五个：指定范围的搜索
+
+​    一、 intext：搜索内容         ：搜索出来的东西中必须有intext中的东西         举个例子：         intext：javaSpringBoot                二、allintext：关键字           ：搜索出来的内容必须包含关键字的所有字段            举个例子：          allintext：javaSpringCloud
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672375867-592d86ef-aec5-4295-8382-b1b7dcbe6649.png)![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642672375912-ad260498-2b6c-4645-89b2-65a838aebcd4.png)
+
+总结
+
+- 上述所说，并不是所有人都适合，所以还是要看**个人习惯**的！
+- 上述操作在Google中也是适用的，所以在**各大搜索引擎**中放心使用吧！
+
+- **其实我们平时如果使用更准确的关键词进行搜索**，结果也和上述结果差不多。
+- **一个高效的搜索引擎可以帮你完成百分之三十的工作，如果再加上高效搜索技巧可以让你完成百分之五十的工作；大大提高办公效率！**

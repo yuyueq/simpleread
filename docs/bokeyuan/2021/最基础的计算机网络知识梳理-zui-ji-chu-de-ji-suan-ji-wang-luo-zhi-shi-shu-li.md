@@ -1,0 +1,1038 @@
+---
+title: 最基础的计算机网络知识梳理
+date: 2020-07-19 11:25:21.0
+updated: 2022-01-21 11:31:40.565
+url: /archives/zui-ji-chu-de-ji-suan-ji-wang-luo-zhi-shi-shu-li
+categories: 计算机 | 专业
+tags: 学习记录
+---
+
+# 第一章
+
+## 计算机网络概述
+
+### 一、阶段
+
+第一阶段：单个网络Arpanet
+
+第二阶段：三级结构网络
+
+第三阶段：多层ISP（网络服务提供商）互联网（主干——地区——局域）
+
+
+
+### **二、中国的发展简史：**
+
+1980互联网实验——1989第一个公共网络运行——1994年接入国际互联网
+
+中国电信——中国联通——中国移动——中国教育科研——中国科学技术网
+
+1996年，张朝阳搜狐——1997年，丁磊创建网易——1998年，王志东创建新浪——1998年，马化腾创建腾讯——1999年，马云创建阿里巴巴——2000年，李彦宏创建百度。
+
+### 三、网络层次结构：
+
+**OSI七层模型/TCP/IP四层协议**
+
+**设计原则：各层之间相互独立；每一层有足够的灵活性；各层之间完全解耦；**
+
+**OSI七层模型**
+
+应用层
+
+表示层
+
+会话层
+
+传输层
+
+网络层
+
+数据链路层
+
+物理层
+
+但是市场化时遇到困难，而且TCP/IP四层模型早已出来，而且设计七层模型的专家缺乏实践经验;制定周期过长，无法及时进入市场;并且存在不合理性 ，多层重复出现。
+
+**TCP/IP（中间窄，两端宽）**
+
+应用层——HTTP、FTP、SMTP、POP3
+
+传输层——TCP、UDP
+
+网络层——IP、ICMP
+
+网络接口层——Ethernet、ARP、RARP
+
+### 四、网络拓扑结构
+
+**边缘部分（平时接触最多的）**
+
+手机、电视……终端——路由器——网关（内部、统一类型）——地区ISP
+
+**核心部分（和一般人没啥关系）**
+
+小型网络、中型网络、大型
+
+
+
+主干ISP——地区ISP——校园、公司、家庭、个人……
+
+（客户——服务器模式接触是最多的，主要是因为我们更容易接触和看到
+
+对等连接（P2P）模式；）
+
+星型网络——总线型网络——树型网络（前两个的综合）——环型网络——网状型网络
+
+**五、网络的性能指标**
+
+**网络速度**
+
+网络速度常用单位是bps；bps=bit/s ；一个字节等于八个比特位；100Mbps=100/8MB；
+
+**时延**
+
+发送时延（数据长度（用户决定）/发送速率（计算机网卡决定，bit为单位））
+
+|
+
+传播时延（传播路径距离（例如北京到上海）/传输速率（传输介质决定））
+
+|
+
+排队时延（数据包在网络设备中等待被处理的时间）
+
+|
+
+处理时延（数据包到达设备或者目的机器被处理的时间）
+
+总时延（四者相加）
+
+**往返时间RTT**
+
+表示的是数据报文在端到端通信中的来回一次的时间
+
+通常使用ping命令查看（各地不同，时间也不同；例如：美国的一个IP地址：191.101.238.160；澳大利亚：1.1.1.1）
+
+# 第二章
+
+## **物理层**
+
+### **一、物理层的作用**
+
+连接不同的物理设备（无屏蔽双绞线、屏蔽双绞线，同轴电缆、光纤、遥控器（红外线））
+
+比特流——高低电平
+
+### **二、信道的基本概念**
+
+往一个方向传送信息的媒体
+
+包含一个接收和一个发送信道
+
+物理层通过信道的不同，可以分为单工（只能一个方向，有线电视、无线电收音机）、半双工（双方都可以发送和接收，但不可以同时）、全双工通信信道
+
+### **三、信道分用——复用技术（物理层已经实现了）**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735284763-b420f934-dc60-42c3-ad35-278b9b6105aa.png)
+
+信道里面：频分复用(FDM)、时分复用(TDM)、波分复用(WDM)、码分复用(CDM)
+
+# 第三章
+
+## 数据链路层
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735284779-90d63da7-fdd0-4af3-98bc-d1d5cfd4155f.png)
+
+### **一、封装成帧**
+
+**“**帧”是数据链路层的基本单位；发送端在网络层的一段数据前后哦添加特定标记形成“帧”；接收端根据前后特定标记识别出“帧”； 
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735284757-6b28a669-f2dd-425c-a30d-2ac76bb33391.png)
+
+若数据里面恰好有这些比特流怎么办？
+
+### **二、透明传输（解决上述问题）**
+
+一种实际存在的事物却又看起来不存在一样（就好像玻璃、还有物理层提供的接口）
+
+应用到数据链路层的表现：即是控制字符在帧数据中，但是要当做不存在的去处理
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735284803-ba2f0942-5457-434a-bb2a-f411966e2762.png)
+
+***编程语言中“\”一般为转义字符；控制字符：“\n”、"\t"；“\\”，"\\\"***
+
+### **三、差错监测**
+
+物理层只管传输比特流，无法控制是否出错
+
+**奇偶校验码**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735284830-79910f33-a1f1-435e-9b49-ab2b11a6ea1c.png)
+
+
+
+所以提出
+
+**循环冗余校验码CRC（广泛使用）**
+
+一种根据传输或保存的数据而产生固定数校验码的方法
+
+检测数据传输或者保存后可能出现的错误
+
+生成的数字计算出来并且附加到数据后面 
+
+***所以需掌握模”2“除法（实际是”异或“操作；两个比特位不一样为1，一样为0）***
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735285504-e4d281a0-06e5-410b-9d7a-943119f49b03.png)
+
+**如何计算呢？看图片就懂了**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735285853-2efaf575-2f63-4366-be96-368cec62dc94.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735285706-effd7826-9036-475e-8e16-79b1bdb9450d.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735285788-ed8b1f9f-29df-4207-ae49-ba85ba142d39.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735285834-a39711f5-30c3-4e96-a51e-6815ebbc6ac0.png)
+
+CRC的错误检测能力与位串的阶数r有关
+
+数据链路层只进行数据的检测，不进行纠正
+
+另外提一点常用的G(x)位串，这是有根据的并不是随意的
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735286255-c58806ce-e512-4d67-b92d-09692257ddf4.png)
+
+**最大传输单元MTU（受限于底层物理硬件的特性）**
+
+数据链路层的数据帧也不是无限大的
+
+数据帧长度受MTU限制
+
+数据帧过大过小都会影响传输的效率（以太网MTU一般为1500字节）
+
+**路径MTU（整个链路中最小的MTU）**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735286521-6b64eafc-eb56-459b-b387-186714d9bbee.png)
+
+### **四、以太网协议（MAC地址（唯一性）：身份证；48位，十六进制表示）**
+
+广泛使用的局域网技术；可以完成相邻设备的数据帧传输
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735286345-b2f8be4b-58dd-4455-8489-014d08100093.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735286554-ec8965cb-f0e5-4dd3-86a4-7af48b10bf78.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735286656-56a72a6c-9e25-4d1e-868b-1c17e88d62ee.png)
+
+# 第四章
+
+##  网络层（解决数据链路层跨设备传输）
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735287016-9189bdd4-e760-4bcf-81a4-73f31cb95dc2.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735287108-f1ae0e0c-0c81-4f1f-96cb-c03390b9f2bd.png)
+
+
+
+## **一、IP协议**
+
+虚拟互联网络：实际的计算机网络是错综复杂的；不同的物理设备通过使用IP协议，屏蔽了物理网络之间的差异；重点关注**端到端的连接**
+
+IP协议使得复杂的实际网络变为一个虚拟互连的网络
+
+IP协议使得网络层可以屏蔽底层细节而专注网络层的数据转发
+
+IP协议解决了在虚拟网络中数据报传输路径的问题
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735287192-b5e0942a-caad-4968-a239-e5f78114b9b0.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735287451-5be35d8b-498e-4dcb-899a-5cebb8ded91f.png)
+
+**IP协议的转发流程（逐跳）**
+
+路由表；它和MAC表差不多
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735287592-0deae2ff-d7cd-44e0-a1f8-70e432f46e0b.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735287891-3cc1f022-e4cb-4a50-a4a5-1a8f8f9cb82d.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735288078-9d534ec4-9225-4a92-a68f-507ecca822e2.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735288095-724bafc4-5f03-4efc-af92-d4b08d9a6dfb.png)
+
+通过观察我们可以发现：数据帧每一跳的MAC地址都在变化
+
+数据报每一跳的IP地址始终不变
+
+
+
+## **二、ARP协议与RARP协议**
+
+*注：虽然ARP协议直接封装在数据帧的，主要是因为ARP协议使用到了IP地址*
+
+ARP地址解析协议（Address Resolution Protocol）
+
+网络层IP32位地址——》数据链路层MAC48位地址
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735288245-a0a9b617-7db0-48f2-92d3-654628cbe458.png)
+
+ARP缓存表是ARP协议和RARP协议运行的关键
+
+ARP缓存了IP地址到硬件地址之间的映射关系
+
+ARP缓存表中的记录并不是永久有效的，有一定的期限
+
+***cmd*****中（arp -a）**
+
+RARP协议（逆地址解析协议）
+
+ARP协议是TCP/IP协议栈里卖最基础的协议；而且对程序员是透明的；有助于我们了解网络分层的细节
+
+## **三、IP地址的子网划分**
+
+复习前面IP地址的知识
+
+IP地址长度为32位，常分成4个8位
+
+IP地址常使用点分十进制来表示（0~255.0~255.0~255.0~255）
+
+**分类的IP地址**
+
+网络号+主机号：总共32位
+
+A类地址：8位的网络号（0开头）+24位的主机号
+
+B类地址：16位的网络号（10开头）+16位的主机号
+
+C类地址：24位的网络号（110开头）+8位的主机号
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735288525-117a6b01-b4c8-4d1a-904b-e1e312a5e755.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735288597-049a6263-fd33-40db-b3f3-c37a6917f913.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735288775-1af18046-7ce1-436f-8df1-df3a92f2122a.png)![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735288938-22778ed4-7a70-4efb-b467-cff5bdf63825.png)
+
+127.0.0.1，通常被称为本地回环地址，不属于任何一个有类别地址类。它代表设备的本地虚拟接口，所以默认被看作是永远不会关掉的接口。所以通常在安装网卡之前就可以ping通这个本地回环地址。 一般都会用来检查本地网络协议、基本数据接口等是否正常的。
+
+D类(1110)、E类地址(1111)
+
+
+
+**划分子网**
+
+相当于把IP地址划分为：网络号+子网号+主机号
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735288982-c65b13db-9123-4574-9ac9-ae327c859663.png)
+
+子网号这么多的话，有没有办法迅速判断某个IP的网络号呢？
+
+：答案是肯定的，这时候就有了子网掩码这一说
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735289276-f4adc72b-4f21-4fc9-a9ef-56194f08a1fa.png)
+
+**无分类编址CIDR**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735289219-8faecfec-7f9a-4bde-ad98-9dd4dfb89f9d.png)
+
+
+
+IP地址为192.168.10.2，子网掩码为255.255.255.240。
+
+先将十进制转换成二进制：
+
+IP地址：  11000000 10101000 00001010 00000010
+
+子网掩码： 11111111 11111111 11111111 11110000
+
+进行与运算：－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+11000000 10101000 00001010 00000000
+
+则可得其网络标识为192.168.10.0，主机标识为2。
+
+现代主要以CIDR无分类编址技术为主，要想更好的理解，就必须熟悉之前的子网划分和子网掩码
+
+## **四、网络地址转换NAT技术**
+
+内网地址：内部机构使用，比如家庭，个人，手机，笔记本；避免与外网地址重复
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735289612-8cb5c7dc-572b-44c4-89e0-73f431b471a7.png)
+
+外网地址：全球范围内使用；全球公网唯一性；
+
+外部使用同一个地址，内部使用不同个地址，以方便使用网络
+
+这时候就会出现一个问题：
+
+内网多个设备使用同一个外网IP请求外网的服务，外部怎么知道具体是哪个设备在请求的？
+
+这时候就要用到网络地址转换NAT技术
+
+：所谓NAT技术就是用于多个主机通过一个公有IP访问互联网的私有网络中
+
+
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735289860-efdee246-8b69-49ab-ae72-df2ba04d40f1.png)
+
+NAT虽然减缓了IP地址的消耗，但是增加了网络通信的复杂度！
+
+## **五、ICMP协议**
+
+**网络控制报文协议**
+
+历程：**IP协议（传输真实的数据）——ARP协议（32位的IP地址转换成48位的MAC地址）——RARP协议（48位的MAC地址转换为３２位的IP地址）——ICMP协议（辅助IP协议进行数据传输的，可以报告异常情况和错误情况，使IP协议更好的传输数据）**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735289830-bfe4effe-6b85-4410-8a01-a0cf803e9676.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735289748-c65c95ef-b926-46ac-8b58-2af23a9292a6.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735289920-5175f7be-b82b-497a-911c-f73a9878057b.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735290313-b58ba828-ad5d-49da-80a2-0b2be9416b4f.png)
+
+**ICMP的应用**
+
+ｐｉｎｇ命令（判断网络的畅通和质量）
+
+：字节——命令发出的报文长度为３２字节，也就是封装的数据报的长度为３２字节
+
+时间——请求到应答的时间
+
+ＴＴＬ——报文在网络传输之后的寿命为多少跳，如果TTL为０的话就会丢弃报文。
+
+如果ping １２７．０．０．１不通的话说明电脑的协议栈出现了问题，这时候需要重装系统或者重新安装协议栈
+
+**ping 网关地址；ping远端地址**
+
+
+
+**Traceroute**
+
+可以探测IP数据报在网络中走过的路径
+
+其中重要的是TTL
+
+：而TTL的主要作用是避免IP包在网络中的无线循环和收发，节省了网络资源，并能使IP包的发送者能收到告警消息
+
+TTL是由发送主机设置的，以防止数据包不断在IP互联网络上永不终止的循环。转发IP数据包时，要求路由器至少将TTL减小1.
+
+TTL值在注册表中，找到具体位置中DefaultTTL的DWORD值，其数据就是默认的TTL值，我们可以进行修改，但不能大于十进制的２５５.。Windows设置后重启才生效。
+
+**来自百度：**
+
+**生存时间**，就是一条域名解析记录在DNS服务器中的存留时间。当各地的DNS服务器接受到解析请求时，就会向域名指定的DNS服务器（权威域名服务器）发出解析请求从而获得解析记录；**在获得这个记录之后，记录会在DNS服务器（各地的缓存服务器，也叫递归域名服务器）中保存一段时间，这段时间内如果再接到这个域名的解析请求，DNS服务器将不会向NS服务器发出请求，而是直接返回刚才获得的记录**；而这个记录在DNS服务器上保留的时间，就是TTL值。
+
+
+
+##  **六、网络层的路由概述**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735290396-39aecf60-8316-41a7-9319-25f10efd3f40.png)
+
+路由算法（本质上是图的算法）（数据结构）
+
+：算法是正确的、完整的
+
+算法在计算机上应该尽可能地简单
+
+算法可以适应网络中地变化
+
+算法是稳定的和公平的
+
+对互联网的划分
+
+**自治系统（AS**）（内部网络自行管理）（相当于前面章节所说的网络层次：主干—地区—校园）
+
+内部路由的协议称为：内部网关协议（RIP、OSPF）
+
+外部路由的协议称为：外部网关协议（BGP）
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735290530-4c0cb126-9fc5-4ea8-926d-da02f325e902.png)
+
+### **内部网关路由之RIP协议**
+
+**距离矢量（DV）算法（核心）（跟路径有很大的关系）**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735290732-59402359-ff24-458c-a4e8-4b260d790e11.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735290686-4b4461cc-efe6-4073-9fec-f9c6b77bc6cd.png)
+
+
+
+
+
+**RIP协议的过程**
+
+**优点：实现简单；开销很小；限制了网络规模**
+
+路由信息协议（Route Information Protocol）
+
+把网络的跳数作为DV算法的距离
+
+每隔30s交换一次路由信息
+
+默认把跳数>15的路由则为不可达
+
+**当使用时：**
+
+对相邻路由器X发过来的信息，对信息的内容进行修改（下一跳地址设置为X，所有距离加1）
+
+i:检索本地路由将信息中的新的路由插入到路由表里面
+
+ii:检索本地路由，对于下一跳为X的，更新为修改后的信息
+
+iii:检索本地路由，对比相同目的的距离，如果新信息的距离更小，则更新本地路由表
+
+如果3分钟没有收到相邻的路由信息，则把相邻路由设置为不可达（16跳）
+
+其中有个最致命的**缺点**：
+
+就是故障信息传递慢：（*随便相信隔壁老王；自己不思考，视野不够，只能看到相邻节点的信息；*）
+
+**Dijkstra（迪杰斯特拉）算法**
+
+插入这个协议的原因是，后面的OSPF协议会用到这个协议
+
+著名的图论算法；解决有权图从一个节点到其他节点的最短路径问题
+
+“以起时点为中心，向外层层扩展”
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735290992-7944b8db-747c-415e-afa7-ef2e2bd73b6b.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735291172-28e67a69-3a57-4399-810f-c630f1a1cda7.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735291142-a886ab19-6c86-47e0-892b-d01f8d381c48.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735291496-fed1aa90-3baf-48d6-ac4a-8457980f7b37.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735291400-f5372a42-9813-4b9b-b7e1-aa14d60cd918.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735291796-d6542269-5ac4-4fb0-b64b-99fd1ac53b53.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735291834-42e4f6ec-2334-46c9-ab4d-2154c09cbb23.png)
+
+## 七、内部网关协议之OSPF协议
+
+**链路状态（LS）协议；建议与前面的RIP协议相结合**
+
+：向所有的路由器发送消息；一传十，十传百（RIP协议只和相邻的路由器交换信息）
+
+消息描述该路由器与相邻路由器的链路状态
+
+只有链路状态发生变化时，才发送更新消息
+
+解决RIP协议“随便相信隔壁老王”“视野不够”的缺点
+
+**OSPF协议的过程（OSPF协议就是一种链路状态协议的实现）**
+
+OSPF（Open Shortest Path First：开放最短路径优先）
+
+核心算法就是Dijikatra算法
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735292362-9204667b-3f76-4fb9-b4c0-4a2f3e0aeab9.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735292410-614f9c20-3784-4966-82fa-a701af4afd7f.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735292608-4bbd33b6-7e69-49ae-a6a3-bb152222f89a.png)
+
+**五种消息类型**
+
+问候消息（Hello）：非常短；维护该路由器与相邻路由器的可达性的
+
+链路状态数据库描述信息： 向隔壁的路由器发送简单的链路状态数据库的消息
+
+链路状态请求信息：向隔壁数据库请求链路状态消息
+
+**链路状态更新信息**：路由器通过广播消息
+
+链路状态确认信息：
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735293122-fbcd7e02-d2ce-4296-ae31-dcb5ef0f7db0.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735292507-496822f9-c6e8-402c-bf21-f363db5aed49.png)
+
+## 八、外部网关路由协议BGP协议
+
+BGP（Border Gateway Protocol：边际网关协议）
+
+BGP协议是运行在AS之间的一种协议
+
+***为什么要使用BGP协议呢？***
+
+：i互联网的规模很大（在AS之间选择这个路由十分困难；如果在AS之间使用LS协议的话，每个路由器都要存储许多链路状态的路由信息；并且要使用迪杰斯特拉算法的话，这个速度是很慢的）
+
+iiAS内部使用不同的路由协议：比如
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735294558-dd1df9bb-ce1a-4314-a5ea-db7fe51466dc.png)
+
+iiiAS之间需要考虑网络特性以外的一些因素（政治、安全……）
+
+因为这些原因，所以BGP协议能够找到一条到达目的**比较好**的路由（找不到最好的路由）
+
+配置BGP协议
+
+关键词：BGP发言人（speaker），也就是路由器
+
+为什么有这个发言人呢？
+
+：BGP并不关心内部网络拓扑
+
+AS之间通过BGP发言人交流信息的
+
+BGP Speaker可以人为配置策略（也就是网络可以人为 的进行干预）
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735293110-4773ca10-8e04-43f9-ba68-ec729150bcd2.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735292994-95b42328-7ece-4c6d-835c-6cf5305b4331.png)
+
+
+# 第五章
+
+## 传输层
+
+管理端到端的通信连接
+
+用户的最底层；面向通信的最高层
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735558655-949a1434-455e-4718-9c98-98d42d89cd1c.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735558649-4931170d-d0b1-4c9e-9c35-42608c014411.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735558728-9ebdf660-a567-4835-b09b-cd50f918605c.png)
+
+## 一、UDP协议详解
+
+UDP协议（User Datagram Protocol：用户数据报协议）
+
+UDP是一个简单的协议（无连接协议：意思就是不需要提前建立连接）
+
+：数据报——UDP不会进行处理，直接封装后传输出去；数据长短主要是由应用层决定 的。
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735558676-10ac3d4a-ccba-4adf-9869-60458ffaeba0.png)
+
+
+
+UDP不能保证可靠的交付数据（想发就发；UDP头部过于简单）
+
+UDP是面向报文传输的（不会对报文进行任何处理）
+
+UDP没有拥塞控制（不管网络是否拥塞，都会发出数据）
+
+UDP的首部开销很小
+
+## 二、TCP协议详解
+
+- TCP（Transmission Control Protocol：传输控制协议）
+- TCP协议是计算机网络中非常复杂的一个协议
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735558646-c0c3f89b-36d5-449f-8ad0-126aa3184cd3.png)
+
+
+
+- TCP是面向连接的协议
+- TCP的一个连接有两端（点对点通信）
+
+- TCP提供可靠的传输服务
+- TCP协议提供全双工的通信
+
+- TCP是面向字节流的协议（对用户数据块合并或者拆分）
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735559718-b375c958-b27e-4aa1-b959-ff4f9753aa8f.png)
+
+1. 序号：0~2^32-1;一个字节一个序号；数据首字节序号
+2. 确认号：0~2^32-1；一个字节一个序号；期望收到数据的首字节序号；如果某个数据报的数据确认号为N:则表示N-1序号的数据已经收到
+
+3. 数据偏移：占4位；0~15，单位为：32位字（4个字节）；数据偏离首部的距离（主要是因为TCP选项所导致的）
+
+TCP标记：占六位；
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735559416-97294da7-2be5-4995-bcbb-a9ce816ccab8.png)
+
+1. 窗口：占16位：0~2^16-1；**窗口指明允许对方发送的数据量**（如果确认号为501，窗口为1000，那就表明501~1500之间的数据都是可以接收的）
+2. 校验和
+
+3. 紧急指针：紧急数据（URG=1）
+4. TCP选项：最多40字节；支持未来拓展
+
+## 三、可靠传输的基本原理
+
+### 停止等待协议
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735559391-364dede9-a521-45b4-9aed-6aaf762a0f46.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735559411-04dc5259-9f00-4a23-9f68-ab1b239727b8.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735559519-a433d105-f82a-43e5-a962-c8eff82d631d.png)
+
+**三种情况**
+
+1. 发送的消息在路上丢失了
+2. 确认的消息在路上丢失了
+
+3. 确认的消息很久才到
+
+每发送一个消息，都需要设置一个定时器：
+
+### **超时定时器（第一个定时器）**
+
+***（TCP里面总共四个定时器，还有三个，后续学习）***
+
+**总结**
+
+- 停止等待协议是最简单的可靠传输协议
+- 停止等待协议对信道的利用率不高
+
+### 连续ARQ协议
+
+**提高信道利用率**
+
+***因为停止等待协议的效率并不高，所以在这基础上开发了连续ARQ协议***
+
+ARQ（Automatic Repeat reQuest：自动重传请求）
+
+“既然单个发送和确认效率低，可不可以批量发送和确认？”引出了ARQ协议
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560095-63dbd9c9-353a-4741-82b2-35b5f238d77d.png)
+
+- 滑动窗口
+- 累计确认
+
+## 四、TCP协议的可靠传输
+
+- TCP的可靠传输基于连续ARQ协议
+- TCP的滑动窗口以字节为单位
+
+情况１：中间并没有出现数据超时
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560090-52c1193a-b4ea-4867-8f4b-873ddffeb163.png)
+
+情况２：出现数据超时
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560060-a462e638-aded-4bef-b16d-6d2ef7de2793.png)
+
+情况３：都发送都未确认
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560158-5080265b-ed24-4490-a1de-d8e8285e3bb2.png)
+
+情况４：特殊情况；未按顺序传输
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560195-1c0ac2af-d48c-4b21-8977-387083334610.png)
+
+这些情况都会降低传输效率；所以就提出了 
+
+**选择重传**
+
+**更多的情况下是对一段字节进行重传的，主要是因为考虑实际情况**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560727-be0528f4-abe2-4812-9d12-3cdba0006ab8.png)
+
+
+
+## 五、TCP协议的流量控制
+
+- 流量控制指让发送方发送速率不要太快（主要是考虑到实际情况）
+- 流量控制是使用滑动窗口来实现的
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560589-ba6ec886-e8e1-45b0-bbb5-d1403aa49854.png)
+
+（处理后马上交给应用层，接收方会告诉ｒｗｎｄ＝１０００
+
+这样的话发送方又可以继续发送了！）
+
+**特殊情况**
+
+如果接收方给发送方传输的窗口大小信息（ｒｗｎｄ＝１０００）丢失了，发送方会一直的等待，以进行新的数据的发送；而接受方已经把窗口调大的消息发出去了，所以接收方一直进行等待发送方发送数据，这时候就形成了“死锁”的局面。
+
+那么TCP不是可靠传输吗？
+
+：我们在进行TCP的可靠传输讨论的时候，是从数据的角度去考虑的，都是对数据的确认，比如序列号，确认号等。而对特殊的消息，窗口大小调整的消息是没有超时重传机制的，所以会形成死锁。
+
+这时候就要
+
+### **坚持定时器（第二个计时器）**
+
+**（解决“死锁”局面）**
+
+- 当接收到窗口为０的消息，则启动坚持定时器
+- 每隔一段时间发送一个窗口探测报文（去询问窗口是否进行了调大，如果调大后，就进行新的数据的发送）
+
+**总结**
+
+TCP协议使用滑动窗口实现流量控制
+
+坚持定时器的作用
+
+## 六、TCP协议的拥塞控制
+
+- 一条数据链路经过非常多的设备
+- 而数据链路中各个部分都有可能成为网络传输的瓶颈（不同设备，不同的性能；传输导体）
+
+可以对上节所述流量控制进行简单的区分
+
+：流量控制考虑点对点的通信量的控制（通过控制窗口的大小来控制流量传输）
+
+而拥塞控制考虑整个网络，是全局性的考虑。
+
+- 拥塞控制是一个很庞大的概念，所以很难找出最优的方法
+- 那么什么是拥塞呢？
+
+：**报文超时则认为是拥塞，但是通过报文超时判断网络是否一定发生拥塞是不成立的。**
+
+**（**如果我们进行物理层上面的更改，就不是报文的超时，而是网络故障；比如把光纤拔了**）**
+
+### 拥塞控制的两个算法
+
+**慢启动算法**
+
+- 由小到大逐渐增加发送数据量
+- 每收到一个报文确认，就加一（１ ２ ４ ８ １６ ……）
+
+指数增长；而且有慢启动阈值（ssthresh）
+
+*当到达这个阈值的时候，他就会进行下面一个算法*
+
+**拥塞避免算法**
+
+- 维护一个拥塞窗口的变量
+- 只要网络不拥塞（报文不超时），就试探着拥塞窗口调大
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560781-b7d25b2c-b710-47ff-870a-82f22de91736.png)
+
+（指数增长——线性增长）
+
+
+
+## 七、TCP连接的建立
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560790-c2f02d7b-8a98-49b8-8b60-c9c2a1f8cd65.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735560963-ac4b290c-4150-47e6-bcea-c37be9ff2ac6.png)
+
+### 三次握手
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735561392-3b17e4dd-241f-4293-af1e-0d1be65aa5db.png)
+
+**为什么发送发要发出第三个确认报文呢？**
+
+：***避免失效的连接请求报文传送到对方，引起错误***
+
+比如两次握手的后果：连接两次
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735561356-889cc81f-bc61-4954-9a98-4ed4d18d6a9f.png)
+
+***当进行三次握手建立连接时，发送方第二次建立起第二次握手时比发送方第一次建立起第二次握手时要快；这时候，发送方第二次建立起第二次握手并进行了第三次握手，表明TCP连接建立成功，就算第一次建立了属于它的第二次握手，但这个连接已建立，所以会忽略掉！***
+
+### 四次释放（四次挥手）
+
+**连接的释放**
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735561515-db83bb7b-9fbc-4276-96d3-2e8471611787.png)
+
+### 等待计时器（第三个计时器）
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735561471-8b66173e-e271-4972-8c57-c2ba28ccbbe9.png)
+
+**为什么要等待2MSL？**
+
+- 最后一个报文没有确认
+- **确保发送方的ACK可以正确到达接受方**
+
+（而且2MSL是网络中报文存活的最长时间） 
+
+- 2MSL时间内没有收到，则接收方会进行重发（重复的发送ACK=1的报文确认）
+- 确保当前连接的所有报文都已经过期
+
+## 八、套接字与套接字编程
+
+- 使用端口（port）来标记不同的网络进程
+- 端口（Port）使用16比特位表示（0~65535）
+
+- **通过IP和Port**我们可以表示或指定网络中某一台主机的具体进程是什么
+
+而这个组合我们就叫做**套接字（Socket）**；而它是个**抽象概念**，表示TCP连接的一端
+
+- 通过套接字可进行数据发送或接收
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735562054-a02929ef-ea1c-49ea-ac19-171206ff46cb.png)
+
+
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735562077-a6660422-fb71-45b6-af64-b1329656c7e1.png)
+
+网络套接字——域套接字（Linux操作系统中的知识）
+
+-  网络套接字必须要在协议栈里走一遍
+-  域套接字是通过域套接字文件（单机通信比较好）
+
+
+
+# 第六章
+
+## 应用层
+
+- 传输层以及以下的层已经提供完整的通信服务，应用层只需要对接用户就可以了
+- 应用层是面向用户的一层，主要是为用户解决问题的
+
+- 简单回顾一下
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735562319-606dc83e-032d-4d00-8d7c-cdaffdb1fa60.png)
+
+- 定义应用间通信的规则；应用进程的报文类型（请求报文、应答报文）；报文的语法、格式；应用进程发送数据的时机、规则。
+
+
+
+## 一、DNS详解
+
+DNS（Domain Name System：域名系统）
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735562361-995387e8-1fee-4387-a2d2-a60cbece8b6d.png)
+
+- IP地址是点分十进制的，所以对于人来说太复杂，如果应用在现实中有点不符合实际
+- 所以使用域名帮助记忆，而域名是要DNS服务提供的；通过域名映射出本来的IP地址
+
+- 域名是由点、字母和数字组成的
+- 点分割不同的域
+
+- 域名可以分为顶级域、二级域、三级域（比如：[www.baidu.com/；com为顶级域；baidu为二级域；www为三级域](http://www.baidu.com/；com为顶级域；baidu为二级域；www为三级域)）（其实还是可以分割为四级、五级等）
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735562355-4efa100f-8d54-4f24-b652-8319c974a9ee.png)![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735562765-2dd1e21b-b245-4d38-8618-3f6ac8827e3f.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735562751-430f7340-1952-42b9-bb19-2eefccb21e2b.png)
+
+
+
+树状结构
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735563339-53215517-4849-41d7-b31b-bb779fd7e374.png)
+
+## 二、DHCP协议
+
+- DHCP（Dynamic Host Configuration Protocol:动态主机设置协议）
+- DHCP是一个**局域网**协议
+
+- DHCP是应用UDP协议的应用层协议
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735563075-8b14e87e-9192-45c8-a662-8a43d651e86f.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735562987-d931a7ac-b8ff-41e4-821b-4d4a46286b14.png)
+
+## 三、HTTP协议简识
+
+HTTP（HyperText Transfer Protocol：超文本传输协议）
+
+- 超文本：“超级文本”“带超链接文本”包括图片、动态图、……
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735563352-e1ff090f-5158-478e-b83d-7a7c249b9b4a.png)
+
+- HTTP协议是可靠的数据传输协议（文本、图片、音频、文件、动图、视频等）
+- C/S架构（客户端——服务端）
+
+- **Web服务器**
+
+：硬件与**软件部分**；
+
+- - 首先接收客户端连接
+  - 接收请求报文
+
+- - 处理请求
+  - 访问Web资源
+
+- - 构造应答
+  - 发送应答
+
+- - Get方法：获取指定的服务端资源
+  - Post方法：提交数据到服务端（通常使用Post方法）
+
+- - Delete方法：删除指定的服务端资源
+  - Update方法：更新指定的服务端资源
+
+- - 怎么样指定呢？
+
+：在地址中指定；
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735563426-1312a8ab-c2d0-4fca-99f1-a3b85724551c.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735563593-7745b726-bc9f-4616-875b-f9bbd2d0baa3.png)
+
+在请求数据里面指定
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735563865-9b9e2751-eb86-4b4b-8b45-7dd4e6689f85.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735563990-28b4957b-4c0d-44b6-a121-7dae3cf3ef33.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735564079-d1be846f-953a-4bd1-a75a-93d402222d0d.png)
+
+
+
+### HTTP工作的结构
+
+
+
+
+
+
+
+## 四、HTTPS协议简识
+
+- HTTP是明文传输的（这导致一些问题的出现：账号密码、交易信息、个人信息、账户金额、敏感信息……）
+- HTTPS（secure）是安全的HTTP协议（ｈｔｔｐ（ｓ）：//主机；端口/路径）
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735564052-d291c9c2-c3b5-486b-ab6b-1af54df82d7f.png)![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735563917-607cb55a-2968-4bb2-99db-d952d33a1159.png)
+
+- A、B是拥有一定数学关系的一组秘钥
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735564301-92850a6d-b907-42d9-80ce-5ee29491e255.png)已经用公钥加密后，就不能用公钥解密了
+
+- 数字证书是可信任组织颁发给特定对象的认证
+
+#### SSL（secure socket layer：安全套阶层）
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735564869-714e305f-49ac-4823-a454-984f12a705c8.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735564896-df20375e-8f73-4a58-b03f-0fbf391fac0a.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735564947-7911b503-8b0f-4d6b-8040-4950014398cb.png)
+
+![img](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/1642735565095-7e58d4cd-2296-420a-98d3-23fb8f876c08.png)
+
+后续还待总结……
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
