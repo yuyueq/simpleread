@@ -1,9 +1,14 @@
 ---
 title: 简单的电脑使用技巧和维护方法（肝货二）
-date: 2020-07-17 19:05:26.0
-updated: 2022-01-21 13:43:26.279
+
+date: 2020-07-17 19: 05:26.0
+
+updated: 2022-01-21 13: 43:26.279
+
 url: /archives/jian-dan-de-dian-nao-shi-yong-ji-qiao-he-wei-hu-fang-fa--gan-huo-er-
+
 categories: 电脑 | 安装配置 | 计算机
+
 tags: Windows
 ---
 
