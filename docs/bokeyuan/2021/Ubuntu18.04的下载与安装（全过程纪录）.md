@@ -1,11 +1,3 @@
----
-title: Ubuntu18.04的下载与安装（全过程纪录）
-date: 2021-06-16 13:01:19.0
-updated: 2022-01-21 13:02:34.55
-url: /archives/ubuntu1804-de-xia-zai-yu-an-zhuang--quan-guo-cheng-ji-lu-
-categories: 安装配置 | Linux
-tags: 问题记录 | Linux
----
 
 > unbuntu18.04的下载与安装
 

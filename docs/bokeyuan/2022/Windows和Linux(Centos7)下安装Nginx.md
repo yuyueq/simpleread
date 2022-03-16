@@ -1,14 +1,3 @@
----
-title: Windows和Linux(Centos7)下安装Nginx
-date: 2022-01-20 13:52:11.0
-updated: 2022-01-21 13:54:24.674
-url: /archives/windows-he-linuxcentos7-xia-an-zhuang-nginx
-categories: 安装配置 | 计算机 | Linux
-tags: 问题记录 | Linux
----
-
-
-
 > 安装Nginx
 
 > 这篇记录只不过做了一个简单总结，如果对这块没什么概念的话可以看一下知乎的这篇文章

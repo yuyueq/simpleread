@@ -1,13 +1,4 @@
----
-title: 给自己的网站装上SSL证书
-date: 2022-01-21 13:55:35.984
-updated: 2022-01-21 13:55:35.984
-url: /archives/gei-zi-ji-de-wang-zhan-zhuang-shang-ssl-zheng-shu
-categories: 安装配置 | 计算机
-tags: 学习记录
----
-
-> 给网站装上SSL证书
+# 给网站装上SSL证书
 
 # 前言
 
