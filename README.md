@@ -1,6 +1,28 @@
-# Yuyueq
+<h1 style="text-align:center">开始阅读Yuyueq</h1>
 
-**"简单阅读我的记录"**
+<a href="https://github.com/yuyueq" target="_blank">
+	<img src="https://pic.imgdb.cn/item/5f6572d3160a154a677dc43a.jpg" width=""/>
+</a>
+</p>
+
+<p align="center">
+  <a href="https://www.cnblogs.com/yuyueq"><img src="https://img.shields.io/badge/博客园-read-brightgreen.svg" alt="阅读"></a>
+  <a href="https://gitee.com/yuyueq"><img src="https://img.shields.io/badge/Gitee-Go-important.svg" alt="Gitee"></a>
+  <a href="https://www.yuque.com/yuyueq"><img src="https://img.shields.io/badge/语雀-read-important.svg" alt="语雀"></a>
+  <a href="https://blog.csdn.net/Frank_dwx"><img src="https://img.shields.io/badge/CSDN-read-important.svg" alt="csdn"></a>
+  <a href="https://www.yuyueq.cn/"><img src="https://img.shields.io/badge/个人网站-Go-important.svg" alt="个人网站"></a>
+  <!-- <a href="#公众号"><img src="https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-JavaGuide-lightgrey.svg" alt="公众号"></a> -->
+</p>
+
+<font size=6>**更新记录**</font>
+>2022/3/16   16：24   优化内容（去除掉进入首页，博客园部分文章导入并进行排版优化，新增"资源"、“语雀”两个模块）
+> 
+>2022/3/15   11：11   更新整个结构
+> 
+>2021/11/10  16：30   初始化仓库
+
+
+> **关于我的一些社交平台，其实将近百分之九十的内容都是一样的，毕竟刚开始使用的博客园去记录的**
 ![img_1.png](img_1.png)
 
 ## Introduction
@@ -11,13 +33,23 @@
 
 ---
 
-[Gitee](https://gitee.com/yuyueq)  | [语雀](https://www.yuque.com/yuyueq)  |  [CSDN](https://blog.csdn.net/Frank_dwx)  | [个人网站](https://www.yuyueq.cn/)
 
----
+## 资源
 
-[🔥开发中的相关网站资源（长更！）](docs/bokeyuan/2022/🔥开发中的相关网站资源（长更！）.md)
+### 开发
+[🔥🔥🔥开发中的相关网站资源（长更！）](docs/bokeyuan/2022/🔥开发中的相关网站资源（长更！）.md)
 
-[🔥我常用的网站资源集合（长更！）](docs/bokeyuan/2021/🔥我常用的网站资源集合（长更！）.md)
+[程序员崩溃的40个瞬间（跳转语雀)](https://www.yuque.com/yuyueq/simpread/1643264312574)
+
+[Java开发手册阿里（跳转语雀)](https://www.yuque.com/yuyueq/java/awf3ga)
+
+[layuiAdminPro单页版开发者文档](docs/docResource/layuiAdminPro单页版开发者文档.md)
+
+
+### 日常
+[🔥🔥🔥我常用的网站资源集合（长更！）](docs/bokeyuan/2021/🔥我常用的网站资源集合（长更！）.md)
+
+[应届生扫盲，求职必看！三方协议&签约违约你必须了解的事](docs/docResource/应届生扫盲，求职必看！三方协议&签约违约你必须了解的事.md)
 
 ---
 
@@ -89,6 +121,8 @@
 会把语雀平时记录的东西搬过来，当做公开笔记
 
 [MySQL实战45讲](docs/yuque/MySQL实战45讲.md)
+
+[趣谈网络协议](docs/docResource/趣谈网络协议.md)
 
 
 
