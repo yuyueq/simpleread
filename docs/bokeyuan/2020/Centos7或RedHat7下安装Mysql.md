@@ -1,11 +1,3 @@
----
-title: Centos7或RedHat7下安装Mysql
-date: 2020-11-02 11:44:14.0
-updated: 2022-01-21 11:45:20.281
-url: /archives/centos7-huo-redhat7-xia-an-zhuang-mysql
-categories: MySQL | 安装配置 | Linux
-tags: 问题记录
----
 
 # 一次简单的Mysql安装记录
 
