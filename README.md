@@ -52,78 +52,88 @@
 [应届生扫盲，求职必看！三方协议&签约违约你必须了解的事](docs/docResource/应届生扫盲，求职必看！三方协议&签约违约你必须了解的事.md)
 
 ---
+## 语雀
 
-## 博客园
+会把语雀平时记录的东西搬过来，当做公开笔记
 
-### 2020年
-[初学编程所看的书籍](docs/bokeyuan/2020/初学编程所看的书籍.md)
+**2022-03-17 13:30** [MySQL实战45讲](docs/yuque/MySQL实战45讲.md)
 
-[Linux目录，rpm及top，vi命令简记](docs/bokeyuan/2020/Linux目录，rpm及top，vi命令简记.md)
-
-[Linux系统中有趣的命令（可以玩小游戏）](docs/bokeyuan/2020/Linux系统中有趣的命令（可以玩小游戏）.md)
-
-[Windows下的Linux子系统](docs/bokeyuan/2020/Windows下的Linux子系统.md)
-
-[修改RedHat7的root用户密码](docs/bokeyuan/2020/修改RedHat7的root用户密码.md)
-
-[Centos7或RedHat7下安装Mysql](docs/bokeyuan/2020/Centos7或RedHat7下安装Mysql.md)
-
-[记Centos7和RHEL连接不上网络](docs/bokeyuan/2021/记Centos7和RHEL连接不上网络.md)
-
-[Eclipse工具的简单使用](docs/bokeyuan/2020/Eclipse工具的简单使用.md)
-
-[认识JDBC](docs/bokeyuan/2020/认识JDBC.md)
-
-[如何（正确）使用搜索引擎？使用搜索引擎的高效技巧（例如：百度、谷歌）](docs/bokeyuan/2020/如何（正确）使用搜索引擎？使用搜索引擎的高效技巧（例如：百度、谷歌）.md)
-
-[安装VMTools失败的三类解决方法（Windows、Linux、MacOs）](docs/bokeyuan/2020/安装VMTools失败的三类解决方法（Windows、Linux、MacOs）.md)
-
-[如何更换Windows中命令行字体](docs/bokeyuan/2020/如何更换Windows中命令行字体.md)
-
-[Host是什么？如何设置host文件？](docs/bokeyuan/2020/Host是什么？如何设置host文件？.md)
-
-[让电脑变好用的几款软件和工具(肝货三)](docs/bokeyuan/2020/让电脑变好用的几款软件和工具(肝货三).md)
-
-[简单的电脑使用和维护方法（肝货一）](docs/bokeyuan/2020/简单的电脑使用和维护方法（肝货一）.md)
-
-[简单的电脑使用技巧和维护方法（肝货二）](docs/bokeyuan/2020/简单的电脑使用技巧和维护方法（肝货二）.md)
-
-### 2021年
-[2021.11-12月SQL、前端、Java文章学习及资源记录](docs/bokeyuan/2021/2021.11-12月SQL、前端、Java文章学习及资源记录.md)
-
-[对于MySQL远程连接中出现的一个问题总结](docs/bokeyuan/2021/对于MySQL远程连接中出现的一个问题总结.md)
-
-[对HashMap的一次记录](docs/bokeyuan/2021/对HashMap的一次记录.md)
-
-[面试问题记录三(JavaWeb、JavaEE)](docs/bokeyuan/2021/面试问题记录三(JavaWeb、JavaEE).md)
-
-[面试问题记录二(数据库、Linux、Redis)](docs/bokeyuan/2021/面试问题记录二(数据库、Linux、Redis).md)
-
-[面试问题记录一(基础部分)](docs/bokeyuan/2021/面试问题记录一(基础部分).md)
-
-[WEB与游戏开发的一些区别-web与游戏开发的一些区别](docs/bokeyuan/2021/WEB与游戏开发的一些区别-web与游戏开发的一些区别.md)
-
-[MarkDown常用语法全纪录](docs/bokeyuan/2021/MarkDown常用语法全纪录.md)
-
-[Ubuntu18.04的下载与安装（全过程纪录）](docs/bokeyuan/2021/Ubuntu18.04的下载与安装（全过程纪录）.md)
-
-### 2022年
-[给自己的网站装上SSL证书](docs/bokeyuan/2022/给自己的网站装上SSL证书.md)
-
-[Windows和Linux(Centos7)下安装Nginx](docs/bokeyuan/2022/Windows和Linux(Centos7)下安装Nginx.md)
-
-[Google Java风格指南](docs/bokeyuan/2022/GoogleJava风格指南.md)
+**2022-03-17 16:45** [趣谈网络协议](docs/docResource/趣谈网络协议.md)
 
 ---
 
-## 语雀
-### Introduction
-会把语雀平时记录的东西搬过来，当做公开笔记
 
-[MySQL实战45讲](docs/yuque/MySQL实战45讲.md)
 
-[趣谈网络协议](docs/docResource/趣谈网络协议.md)
 
+## 博客园
+
+### 2022年 (3篇)
+**2022-01-21 09:30** [给自己的网站装上SSL证书](docs/bokeyuan/2022/给自己的网站装上SSL证书.md)
+
+**2022-01-20 17:22** [Windows和Linux(Centos7)下安装Nginx](docs/bokeyuan/2022/Windows和Linux(Centos7)下安装Nginx.md)
+
+**2022-01-18 18:10** [Google Java风格指南](docs/bokeyuan/2022/GoogleJava风格指南.md)
+
+---
+
+### 2021年 (9篇)
+**2021-12-17 16:16** [2021.11-12月SQL、前端、Java文章学习及资源记录](docs/bokeyuan/2021/2021.11-12月SQL、前端、Java文章学习及资源记录.md)
+
+**2021-09-03 15:56**  [对于MySQL远程连接中出现的一个问题总结](docs/bokeyuan/2021/对于MySQL远程连接中出现的一个问题总结.md)
+
+**2021-08-09 17:01** [对HashMap的一次记录](docs/bokeyuan/2021/对HashMap的一次记录.md)
+
+**2021-08-02 20:34** [面试问题记录三(JavaWeb、JavaEE)](docs/bokeyuan/2021/面试问题记录三(JavaWeb、JavaEE).md)
+
+**2021-07-31 17:34** [面试问题记录二(数据库、Linux、Redis)](docs/bokeyuan/2021/面试问题记录二(数据库、Linux、Redis).md)
+
+**2021-07-28 21:30** [面试问题记录一(基础部分)](docs/bokeyuan/2021/面试问题记录一(基础部分).md)
+
+**2021-07-10 20:38** [WEB与游戏开发的一些区别-web与游戏开发的一些区别](docs/bokeyuan/2021/WEB与游戏开发的一些区别-web与游戏开发的一些区别.md)
+
+**2021-06-21 22:51** [MarkDown常用语法全纪录](docs/bokeyuan/2021/MarkDown常用语法全纪录.md)
+
+**2021-06-16 09:42** [Ubuntu18.04的下载与安装（全过程纪录）](docs/bokeyuan/2021/Ubuntu18.04的下载与安装（全过程纪录）.md)
+
+---
+
+### 2020年 (16篇)
+**2020-12-03 13:09** [让电脑变好用的几款软件和工具(肝货三)](docs/bokeyuan/2020/让电脑变好用的几款软件和工具(肝货三).md)
+
+**2020-11-14 22:48** [修改RedHat7的root用户密码](docs/bokeyuan/2020/修改RedHat7的root用户密码.md)
+
+**2020-11-03 18:03** [Linux目录，rpm及top，vi命令简记](docs/bokeyuan/2020/Linux目录，rpm及top，vi命令简记.md)
+
+**2020-11-02 22:42** [Centos7或RedHat7下安装Mysql](docs/bokeyuan/2020/Centos7或RedHat7下安装Mysql.md)
+
+**2020-10-16 12:05** [认识JDBC](docs/bokeyuan/2020/认识JDBC.md)
+
+**2020-08-19 00:27** [Linux系统中有趣的命令（可以玩小游戏）](docs/bokeyuan/2020/Linux系统中有趣的命令（可以玩小游戏）.md)
+
+**2020-08-12 14:40** [初学编程所看的书籍](docs/bokeyuan/2020/初学编程所看的书籍.md)
+
+**2020-08-08 16:51** [Eclipse工具的简单使用](docs/bokeyuan/2020/Eclipse工具的简单使用.md)
+
+**2020-07-31 17:49** [安装VMTools失败的三类解决方法（Windows、Linux、MacOs）](docs/bokeyuan/2020/安装VMTools失败的三类解决方法（Windows、Linux、MacOs）.md)
+
+**2020-07-19 01:04** [简单的电脑使用技巧和维护方法（肝货二）](docs/bokeyuan/2020/简单的电脑使用技巧和维护方法（肝货二）.md)
+
+**2020-07-17 00:57** [简单的电脑使用和维护方法（肝货一）](docs/bokeyuan/2020/简单的电脑使用和维护方法（肝货一）.md)
+
+**2020-07-16 18:23** [Host是什么？如何设置host文件？](docs/bokeyuan/2020/Host是什么？如何设置host文件？.md)
+
+**2020-07-14 21:49** [如何（正确）使用搜索引擎？使用搜索引擎的高效技巧（例如：百度、谷歌）](docs/bokeyuan/2020/如何（正确）使用搜索引擎？使用搜索引擎的高效技巧（例如：百度、谷歌）.md)
+
+**2020-07-10 12:29** [记Centos7和RHEL连接不上网络](docs/bokeyuan/2021/记Centos7和RHEL连接不上网络.md)
+
+**2020-07-06 21:05** [如何更换Windows中命令行字体](docs/bokeyuan/2020/如何更换Windows中命令行字体.md)
+
+**2020-06-06 20:23** [Windows下的Linux子系统](docs/bokeyuan/2020/Windows下的Linux子系统.md)
+
+
+
+
+---
 
 
 
