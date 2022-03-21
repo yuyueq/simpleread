@@ -98,6 +98,9 @@
 ---
 
 ### 2022年 (3篇)
+
+**2022-03-21 23:30** [记录一次SQL函数的问题](docs/bokeyuan/2022/记录一次SQL函数的问题.md)
+
 **2022-01-21 09:30** [给自己的网站装上SSL证书](docs/bokeyuan/2022/给自己的网站装上SSL证书.md)
 
 **2022-01-20 17:22** [Windows和Linux(Centos7)下安装Nginx](docs/bokeyuan/2022/Windows和Linux(Centos7)下安装Nginx.md)
