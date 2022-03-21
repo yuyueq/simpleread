@@ -3,7 +3,6 @@
 <a href="https://github.com/yuyueq" target="_blank">
 	<img src="https://pic.imgdb.cn/item/5f6572d3160a154a677dc43a.jpg" width=""/>
 </a>
-</p>
 
 <p align="center">
   <a href="https://www.cnblogs.com/yuyueq"><img src="https://img.shields.io/badge/博客园-read-brightgreen.svg" alt="阅读"></a>
