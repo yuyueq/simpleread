@@ -2,54 +2,781 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>SimpleReadYuyueq</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-</head>
+    <meta charset="UTF-8">
+    <title>SimpleReadYuyueq</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <!-- 将自定义样式放在 Github 上会导致加载速度变得非常慢，所以采取直接内嵌的方式 -->
+    <style type="text/css">
 
+        /* 隐藏头部的目录 */
+        #main > ul:nth-child(1) {
+            display: none;
+        }
+
+        #main > ul:nth-child(2) {
+            display: none;
+        }
+
+        .markdown-section h1 {
+            margin: 3rem 0 2rem 0;
+        }
+
+        .markdown-section h2 {
+            margin: 2rem 0 1rem;
+        }
+
+        img,
+        pre {
+            border-radius: 8px;
+        }
+
+        .content,
+        .sidebar,
+        .markdown-section,
+        body,
+        .search input {
+            background-color: rgba(243, 242, 238, 1) !important;
+        }
+
+        @media (min-width: 600px) {
+            .sidebar-toggle {
+                background-color: #f3f2ee;
+            }
+        }
+
+        .docsify-copy-code-button {
+            background: #f8f8f8 !important;
+            color: #7a7a7a !important;
+        }
+
+        body {
+            /*font-family: Microsoft YaHei, Source Sans Pro, Helvetica Neue, Arial, sans-serif !important;*/
+        }
+
+        .markdown-section > p {
+            font-size: 16px !important;
+        }
+
+        .markdown-section pre > code {
+            font-family: Consolas, Roboto Mono, Monaco, courier, monospace !important;
+            font-size: .9rem !important;
+        }
+
+        /*.anchor span {
+        color: rgb(66, 185, 131);
+        }*/
+
+        section.cover h1 {
+            margin: 0;
+        }
+
+        body > section > div.cover-main > ul > li > a {
+            color: #42b983;
+        }
+
+        .markdown-section img {
+            box-shadow: 7px 9px 10px #aaa !important;
+        }
+
+        pre {
+            background-color: #f3f2ee !important;
+        }
+
+        @media (min-width: 600px) {
+            pre code {
+                /*box-shadow: 2px 1px 20px 2px #aaa;*/
+                /*border-radius: 10px !important;*/
+                padding-left: 20px !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            pre {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+        }
+
+        .markdown-section pre {
+            padding-left: 0 !important;
+            padding-right: 0px !important;
+            box-shadow: 2px 1px 20px 2px #aaa;
+        }
+
+        .markdown-section blockquote {
+            border-left: 5px solid var(--theme-color, #1e99ed);
+        }
+
+
+        /* 文本样式 */
+        /*body{*/
+        /*    !* font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;    *!*/
+        /*    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;*/
+        /*    -webkit-font-smoothing: antialiased;*/
+        /*    -moz-osx-font-smoothing: grayscale;*/
+        /*    font-size: 18px;*/
+        /*    color: #2c3e50;*/
+        /*}*/
+
+        /* h1字体设置 */
+     /*   h1 span {
+            display: inline-block;
+            background: rgb(66, 185, 131);
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px black;
+            font-size: 40px;
+        }
+*/
+        /* h2字体设置 */
+        h2 span {
+            display: inline-block;
+            background: rgb(66, 185, 131);
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px black;
+            font-size: 30px;
+        }
+
+        h3 span {
+            display: inline-block;
+            background: rgb(66, 185, 131);
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px black;
+            font-size: 20px;
+        }
+
+        h4 span {
+            display: inline-block;
+            background: rgb(93, 225, 165);
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px black;
+            font-size: 10px;
+        }
+
+        /*!* 导航栏(不会因下拉而消失) *!*/
+        /*.app-nav {*/
+        /*    position: fixed !important;*/
+        /*}*/
+
+        /*!* 导航栏字体大小 *!*/
+        /*.app-nav a {*/
+        /*    font-size: 18px;*/
+        /*}*/
+
+        /* 以下是侧边栏(自定义) */
+        /*aside.sidebar ul li {*/
+        /*    margin: 0;*/
+        /*    position: relative;*/
+        /*}*/
+
+        /*aside.sidebar ul li ul {*/
+        /*    margin: 6px 0;*/
+        /*}*/
+
+        /*aside.sidebar ul li p {*/
+        /*    padding-left: 22px;*/
+        /*    font-size: 18px;*/
+        /*    font-weight: normal;*/
+        /*}*/
+
+        /*aside.sidebar ul li a {*/
+        /*    line-height: 35px;*/
+        /*    font-size: 16px;    !* 侧边栏字体大小 *!*/
+        /*    padding: 3px 0 3px 22px;*/
+        /*}*/
+
+        /*aside.sidebar ul li.active > a {*/
+        /*    font-size: 16px !important;*/
+        /*}*/
+
+        /*aside.sidebar ul li.active > a:before {*/
+        /*    content: '' !important;*/
+        /*    position: absolute !important;*/
+        /*    margin: 0 !important;*/
+        /*    width: 10px !important;*/
+        /*    height: 10px !important;*/
+        /*    top: 15px !important;*/
+        /*    left: 0px !important;*/
+        /*    border-radius: 50% !important;*/
+        /*    background-color: #fed24a !important;*/
+        /*    box-shadow: 0 0 0 3px rgba(254, 210, 74, 0.4) !important;*/
+        /*}*/
+
+        /*滚动条样式 start*/
+        /* 滚动条宽度 */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* 滚动条颜色 */
+        ::-webkit-scrollbar-thumb {
+            background: #33a9dc;
+            background-image: linear-gradient(#6ecd56, #33a9dc, #cb6196, #c16290);
+            border-radius: 2em;
+        }
+
+        /* 加粗 */
+        .markdown-section strong {
+            color: rgb(0, 123, 232);
+            font-weight: bolder;
+        }
+
+        /* a 标签 */
+        .markdown-section a {
+            color: rgb(0, 123, 232);
+            text-decoration: none;
+        }
+
+        .markdown-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* 无序列表 */
+        /* .markdown-section ul {
+          margin-left: 28px;
+        }
+
+        .markdown-section ul li {
+          padding-top: 4px;
+        } */
+
+        /* 表格 */
+        /*.markdown-section tr:nth-child(2n) {*/
+        /*    background-color: rgb(248, 248, 248);*/
+        /*}*/
+        /*.markdown-section thead{*/
+        /*    background: rgb(248, 248, 248) !important;*/
+        /*}*/
+        /*.markdown-section table {*/
+        /*    border-collapse: collapse;*/
+        /*    border-spacing: 0;*/
+        /*    margin-bottom: 1rem;*/
+        /*    display: table !important;*/
+        /*    overflow: auto;*/
+        /*    width: 100%;*/
+        /*}*/
+
+        /* 引用块 */
+        .markdown-section blockquote {
+            /*background: rgb(220, 220, 255);*/
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* 代码块 */
+        .markdown-section pre {
+            box-shadow: 2px 2px 20px 6px #ddd !important;
+        }
+
+        /* 代码块 */
+        /*  .markdown-section pre:before {
+              content: '';
+              display: block;
+              !*background: url(https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Docsify/images/point.png);*!
+              height: 30px;
+              width: 100%;
+              background-size: 40px;
+              background-repeat: no-repeat;
+              background-color: #282c34;
+              margin-bottom: -7px;
+              margin-top: 10px;
+              margin-left: -3px;
+              border-radius: 5px;
+              background-position: 10px 10px;
+          }*/
+        /*!* 代码块 *!*/
+        .markdown-section pre > code {
+            color: #c0c3c1 !important;
+            font-family: 'Inconsolata', consolas, "PingFang SC", "Microsoft YaHei", monospace !important;
+            background-color: #282c34 !important;
+            font-size: 15px !important;
+            white-space: pre !important;
+            line-height: 1.5 !important;
+            -moz-tab-size: 4 !important;
+            -o-tab-size: 4 !important;
+            tab-size: 4 !important;
+
+        }
+
+        /* 代码块 */
+        markdown-section code, .markdown-section pre {
+            background-color: #282c34;
+        }
+
+        .token.directive.keyword {
+            color: #4faee2 !important;
+        }
+
+        .token.keyword {
+            color: #c678dd !important;
+        }
+
+        .token.comment {
+            color: #737c8b !important;
+        }
+
+        .token.tag {
+            color: #a589ad !important;
+        }
+
+
+        .token.attr-name {
+            color: #de916c !important;
+        }
+
+        .token.attr-value {
+            color: #4faee2 !important;
+        }
+
+        .token.macro.property {
+            color: #4faee2 !important;
+        }
+
+        .token.function {
+            color: #e6b456 !important;
+        }
+
+        .token.string {
+            color: #98b755 !important;
+        }
+
+        .token.punctuation {
+            color: #c0c3c1 !important;
+        }
+
+        .token.number {
+            color: #c0c3c1 !important;
+        }
+
+        img, pre {
+            border-radius: 8px;
+        }
+    </style>
+    <style type="text/css">
+        /**
+     * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+     * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+     * @author Tim  Shedor
+     */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: black;
+            background: none;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            position: relative;
+            margin: .5em 0;
+            overflow: visible;
+            padding: 0;
+        }
+
+        pre[class*="language-"] > code {
+            position: relative;
+            border-left: 10px solid #358ccb;
+            box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+            background-color: #fdfdfd;
+            background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+            background-size: 3em 3em;
+            background-origin: content-box;
+            background-attachment: local;
+        }
+
+        code[class*="language"] {
+            max-height: inherit;
+            height: inherit;
+            padding: 0 1em;
+            display: block;
+            overflow: auto;
+        }
+
+        /* Margin bottom to accommodate shadow */
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background-color: #fdfdfd;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin-bottom: 1em;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            position: relative;
+            padding: .2em;
+            border-radius: 0.3em;
+            color: #c92c2c;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            display: inline;
+            white-space: normal;
+        }
+
+        pre[class*="language-"]:before,
+        pre[class*="language-"]:after {
+            content: '';
+            z-index: -2;
+            display: block;
+            position: absolute;
+            bottom: 0.75em;
+            left: 0.18em;
+            width: 40%;
+            height: 20%;
+            max-height: 13em;
+            box-shadow: 0px 13px 8px #979797;
+            -webkit-transform: rotate(-2deg);
+            -moz-transform: rotate(-2deg);
+            -ms-transform: rotate(-2deg);
+            -o-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+        }
+
+        :not(pre) > code[class*="language-"]:after,
+        pre[class*="language-"]:after {
+            right: 0.75em;
+            left: auto;
+            -webkit-transform: rotate(2deg);
+            -moz-transform: rotate(2deg);
+            -ms-transform: rotate(2deg);
+            -o-transform: rotate(2deg);
+            transform: rotate(2deg);
+        }
+
+        .token.comment,
+        .token.block-comment,
+        .token.prolog,
+        .token.doctype,
+        .token.cdata {
+            color: #7D8B99;
+        }
+
+        .token.punctuation {
+            color: #5F6364;
+        }
+
+        .token.property,
+        .token.tag,
+        .token.boolean,
+        .token.number,
+        .token.function-name,
+        .token.constant,
+        .token.symbol,
+        .token.deleted {
+            color: #c92c2c;
+        }
+
+        .token.selector,
+        .token.attr-name,
+        .token.string,
+        .token.char,
+        .token.function,
+        .token.builtin,
+        .token.inserted {
+            color: #2f9c0a;
+        }
+
+        .token.operator,
+        .token.entity,
+        .token.url,
+        .token.variable {
+            color: #a67f59;
+            background: #282a30;
+        }
+
+        .token.atrule,
+        .token.attr-value,
+        .token.keyword,
+        .token.class-name {
+            color: #1990b8;
+        }
+
+        .token.regex,
+        .token.important {
+            color: #e90;
+        }
+
+        .language-css .token.string,
+        .style .token.string {
+            color: #a67f59;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .token.important {
+            font-weight: normal;
+        }
+
+        .token.bold {
+            font-weight: bold;
+        }
+
+        .token.italic {
+            font-style: italic;
+        }
+
+        .token.entity {
+            cursor: help;
+        }
+
+        .namespace {
+            opacity: .7;
+        }
+
+        @media screen and (max-width: 767px) {
+
+            pre[class*="language-"]:before,
+            pre[class*="language-"]:after {
+                bottom: 14px;
+                box-shadow: none;
+            }
+
+        }
+
+        /* Plugin styles */
+        .token.tab:not(:empty):before,
+        .token.cr:before,
+        .token.lf:before {
+            color: #e0d7d1;
+        }
+
+        /* Plugin styles: Line Numbers */
+        pre[class*="language-"].line-numbers.line-numbers {
+            padding-left: 0;
+        }
+
+        pre[class*="language-"].line-numbers.line-numbers code {
+            padding-left: 3.8em;
+        }
+
+        pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
+            left: 0;
+        }
+
+        /* Plugin styles: Line Highlight */
+        pre[class*="language-"][data-line] {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+        }
+
+        pre[data-line] code {
+            position: relative;
+            padding-left: 4em;
+        }
+
+        pre .line-highlight {
+            margin-top: 0;
+        }
+
+        /* 以下是侧边栏(自定义) */
+        aside.sidebar ul li {
+            margin: 0;
+            position: relative;
+        }
+
+        aside.sidebar ul li ul {
+            margin: 6px 0;
+        }
+
+        aside.sidebar ul li p {
+            padding-left: 22px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        aside.sidebar ul li a {
+            line-height: 35px;
+            font-size: 14px; /* 导航栏字体大小 */
+            padding: 3px 0 3px 22px;
+        }
+
+        aside.sidebar ul li.active > a {
+            font-size: 16px !important;
+        }
+
+        aside.sidebar ul li.active > a:before {
+            content: '' !important;
+            position: absolute !important;
+            margin: 0 !important;
+            width: 10px !important;
+            height: 10px !important;
+            top: 15px !important;
+            left: 0px !important;
+            border-radius: 50% !important;
+            background-color: #fed24a !important;
+            box-shadow: 0 0 0 3px rgba(254, 210, 74, 0.4) !important;
+        }
+    </style>
+
+
+    <!-- 复制声明 -->
+    <!--  <link rel="stylesheet" href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" type='text/css' media='all' />-->
+    <link rel="stylesheet" href="./resource/katex.min.css"/>
+</head>
+<nav>
+    <a href="#/">首页</a>
+    <a href="#/docs/relations.md">关于我</a>
+</nav>
 <body>
-  <div id="app"></div>
-  <!-- docsify-edit-on-github -->
-  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
-  <script>
+<div id="app">🏃‍🏃‍🏃‍💨加载中...</div>
+<!-- docsify-edit-on-github -->
+<script src="./resource/index.js"></script>
+<script>
+
     window.$docsify = {
-      name: 'SimpleReadYuyueq',
-      repo: 'https://github.com/yuyueq/simpleread',
-      maxLevel: 4,//最大支持渲染的标题层级
-      subMaxLevel: 3,
-      homepage: 'README.md',
-      // coverpage: true,
-      // loadSidebar: true,
-      auto2top: true,//切换页面后是否自动跳转到页面顶部
-      //全文搜索
-      search: {
-        //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-        paths: 'auto',
-        placeholder: '搜索',
-        noData: '找不到结果',
-        // 搜索标题的最大程级, 1 - 6
-        depth: 3,
-      },
-      plugins: [
-        EditOnGithubPlugin.create('https://github.com/yuyueq/simple_read/blob/master/')
-      ],
+        name: '📖 SimpleReadYuyueq',
+        repo: 'https://github.com/yuyueq/simpleread',
+        maxLevel: 4,//最大支持渲染的标题层级
+        subMaxLevel: 3,
+        homepage: 'README.md',
+        // coverpage: true,
+        mergeNavbar: true,
+        // 让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间。
+        // topMargin: 25, // default: 0
+        // loadSidebar: true,
+        auto2top: true,//切换页面后是否自动跳转到页面顶部
+        footer: {
+            auth: ' <strong><a href="https://github.com/yuyueq" target="_blank">余月七</a></strong>',
+            copy: '<span id="sitetime"></span> <br/><span>Copyright &copy; 2022 &nbsp 💖 &nbsp</span>',
+            pre: '<hr/>',
+            style: 'font-size: 18px; text-align: center;',
+        },
+
+
+        //全文搜索
+        search: {
+            paths: 'auto',
+            placeholder: '🔍 点击搜索 ',
+            noData: '😞 没有结果! ',
+            // Headline depth, 1 - 6
+            depth: 6
+        },
+        copyCode: {
+            buttonText: 'Copy',
+            errorText: 'Error！',
+            successText: 'OK！'
+        },
+        plugins: [
+            EditOnGithubPlugin.create('https://github.com/yuyueq/simple_read/blob/master/')
+        ],
     }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <!--Java代码高亮-->
-  <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
-  <!--全文搜索,直接用官方提供的无法生效-->
-  <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
-  <!-- 复制到剪贴板 -->
-  <script src="//unpkg.com/docsify-copy-code"></script>
-  <!-- 图片缩放 -->
-  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
-  <!-- 字数统计 -->
-  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+</script>
+
+<script src="./resource/docsify-footer-enh.min.js"></script>
+<script src="./resource/docsify-katex.js"></script>
+
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+
+        /* 建站时间 */
+        var t1 = Date.UTC(2022, 03, 01, 00, 00, 00);
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = " 本站已安全运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分 " + diffSeconds + " 秒 ";
+    }
+
+    siteTime();
+</script>
+
+
+<!-- 回到顶部功能 -->
+<script src="./resource/jquery.js"></script>
+<script src="./resource/jquery.goup.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.goup({
+            trigger: 100,
+            bottomOffset: 52,
+            locationOffset: 25,
+            title: 'TOP',
+            titleAsText: true
+        });
+    });
+</script>
+<!-- 复制提醒 -->
+<!--    <script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>-->
+<!--       <script>-->
+<!--          document.body.oncopy = function () {-->
+<!--           swal("复制成功 ","若要转载或引用请务必保留原文链接，并申明来源。", "success"); };-->
+<!--     </script>-->
+
+
+<script src="./resource/docsify.min.js"></script>
+<!--全文搜索,直接用官方提供的无法生效-->
+<script src="./resource/search.min.js"></script>
+<!-- 代码复制到剪贴板 -->
+<script src="./resource/docsify-copy-code.min.js"></script>
+<!-- 图片缩放 -->
+<script src="./resource/zoom-image.js"></script>
+<!-- 字数统计 -->
+<script src="./resource/countable.js"></script>
+<!--语法高亮插件-->
+<script src="./resource/prism-java.min.js"></script>
+<script src="./resource/prism-bash.min.js"></script>
+<script src="./resource/prism-sql.min.js"></script>
+<script src="./resource/prism-javascript.min.js"></script>
+<script src="./resource/prism-css.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+<!--分页插件-->
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+
 </body>
 
 </html>

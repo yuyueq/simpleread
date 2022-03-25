@@ -186,7 +186,7 @@ public class AppConfig {
 
 ## application-dev.yml
 
-```xml
+```yaml
 ## ---------------七牛相关配置，自行配置-----------------
 qiniu:
   access: 
