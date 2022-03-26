@@ -1,11 +1,4 @@
----
-title: 安装VMTools失败的三类解决方法（Windows、Linux、MacOs）
-date: 2020-07-31 17:14:48.0
-updated: 2022-01-21 11:16:27.635
-url: /archives/an-zhuang-vmtools-shi-bai-de-san-lei-jie-jue-fang-fa-windowslinuxmacos
-categories: 安装配置 | 计算机 | Linux
-tags: 问题记录 | Windows
----
+
 
 # 前言 
 

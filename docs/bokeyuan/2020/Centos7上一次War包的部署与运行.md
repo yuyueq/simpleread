@@ -24,8 +24,11 @@
 ## 2.安装JDK8
 <font size=4>**由于该项目的原因，所以只能使用JDK8进行编译运行代码**</font>
 <font size=4>**使用国内镜像源下载jdk：**</font>
+
 <font size=4>**两个链接地址：**</font>
+
 https://repo.huaweicloud.com/java/jdk/
+
 http://www.sousou88.com/spec/java_openjdk.html
 + <font size=4>第一：卸载掉系统原始的OpenJdk</font>
   <font size=4>**命令：**</font>
@@ -95,11 +98,12 @@ max_allowed_packet=16M
 + <font size=4>将Tomact解压之后，找到“webapps”目录，将war包直接上传至该目录下。</font>
 + <font size=4>返回至Tomcat下的“bin”目录，输入“./startup.sh”命令启动Tomcat；输入“./shutdown.sh”命令进行关闭Tomcat</font>
 
-<font size=4>可参考该笔记  ：https://unleashed.gitee.io/unleashed/2020/11/12/Tomcat&Servlet%E7%AC%94%E8%AE%B0/</font>
-# 四、 所需软件资源
 <font size=5>以下为百度网盘链接</font>
+
 <font size=4>包括JDK8，Tomcat8，MySQL5.7，SecureCRT，FileZilla，Vmware12，centos7，</font>
+
 <font size=4>链接：https://pan.baidu.com/s/1KLn3DJQrlaS3bSxGNa35ZA
 提取码：k8wv
 </font>
+
 <font size=5>关于war包，如有所需，请联系我！</font>

@@ -1,11 +1,3 @@
----
-title: Linux目录，rpm及top，vi命令简记
-date: 2020-11-03 11:45:39.0
-updated: 2022-01-21 11:47:00.889
-url: /archives/linux-mu-lu-rpm-ji-topvi-ming-ling-jian-ji
-categories: Linux
-tags: 学习记录
----
 
 # 一次简单的Linux常用操作记录
 

@@ -1,11 +1,3 @@
----
-title: Host是什么？如何设置host文件？
-date: 2020-07-16 17:47:42.0
-updated: 2022-01-20 17:49:07.558
-url: /archives/host-shi-shen-me--ru-he-she-zhi-host-wen-jian-
-categories: 计算机
-tags: 学习记录
----
 
 # 前言
 
@@ -19,7 +11,7 @@ tags: 学习记录
 
 # 一、我们来看看维基百科的介绍
 
-![](https://img2020.cnblogs.com/blog/2031154/202007/2031154-20200716185320455-2110997511.png)
+![](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20200716185320455-2110997511.png)
 
 
 
@@ -29,7 +21,7 @@ tags: 学习记录
 
     但是光这一点你是看不出来它被用来干过什么，那就让我们继续看维基百科是如何介绍的
 
-![](https://img2020.cnblogs.com/blog/2031154/202007/2031154-20200716185331354-1944584109.png)
+![](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20200716185331354-1944584109.png)
 
 
 
@@ -107,8 +99,6 @@ tags: 学习记录
 
   * 以记事本形式查看，或者你也可以用notepad++或者是更好的Vscode进行查看和编辑。
 
----
-
   * 文件一般是 “只读” 属性；所以如果要更改你还需要去掉“只读”属性。
 
 **手机Host文件的位置：**
@@ -119,11 +109,10 @@ iPad OS：/private/etc 06（需越狱用文件浏览器修改）
 
 Symbian第1/2版手机：C:\system\data\hosts
 
-07
+
 
 Symbian第3版手机：C:\private\100008 82\hosts，只能使用兼容AllFiles的文件 浏览器访问，大部都不行
 
----
 
 安卓系统：根目录/system/etc/hosts（需root后用re或es文件浏览器修改）
 

@@ -1,4 +1,3 @@
-
 # 一次简单的Mysql安装记录
 
 ## 前言
@@ -11,9 +10,8 @@
 
 ### 第一步：yum install wget -y		
 
-<font size =4>//安装wget工具</font>
+//安装wget工具
 
----
 
 ### 第二步: 以tar包形式拉取下载并进行解压
 

@@ -1,16 +1,3 @@
----
-title:  记Centos7和RHEL连接不上网络
-
-date: 2020-07-10 12:03:11.0
-
-updated: 2022-01-21 11:04:00.515
-
-url: /archives/ji-centos7-he-rhel-lian-jie-bu-shang-wang-luo
-
-categories: 安装配置 | Linux
-
-tags: 问题记录 | Linux
----
 
 
 

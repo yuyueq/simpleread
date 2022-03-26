@@ -1,11 +1,3 @@
----
-title: 认识JDBC
-date: 2020-10-16 11:41:57.0
-updated: 2022-01-21 11:43:02.921
-url: /archives/ren-shi-jdbc
-categories: Java | MySQL
-tags: 学习记录
----
 
 
 ## 概念

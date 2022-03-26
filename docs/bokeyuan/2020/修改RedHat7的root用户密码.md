@@ -1,11 +1,3 @@
----
-title: 修改RedHat7的root用户密码
-date: 2020-11-14 11:48:54.0
-updated: 2022-01-21 11:50:14.199
-url: /archives/xiu-gai-redhat7-de-root-yong-hu-mi-ma
-categories: 安装配置 | Linux
-tags: 问题记录 | Linux
----
 
 # 前言
 
@@ -28,8 +20,11 @@ tags: 问题记录 | Linux
 <font size=4>在图片中的界面按下键盘“e”键，然后在**linux16**这一行最后面添加一行内容</font>
 
 > <font size=5> rw rd.break init=/sysroot/bin/sh</font>
+
 > ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20201114224027489-1459934973.png)
+> 
 > <font size=4>网上大多数**linux16**那一行参数如图所示</font>
+> 
 > ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20201114224123112-129615182.jpg)
 
 
@@ -43,6 +38,7 @@ tags: 问题记录 | Linux
 <font size=4>**找到linux16这一行起始地方，然后按end键到这一行最后，再加空格，然后添加这一条语句**</font>
 
 > <font size=5> rw rd.break init=/sysroot/bin/sh</font>
+
 > ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20201114224159738-1335275260.png)
 
 ## 第二步
@@ -56,11 +52,17 @@ tags: 问题记录 | Linux
 <font size=4>1.输入 mount</font>
 
 <font size=4>2. 查看是否为“rw”，如果没有则输入 mount –o remount,rw /sysroot</font>
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20201114224222992-1769348671.png)
+
 <font size=4>3. 切换路径 输入 chroot /sysroot</font>
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20201114224310243-581275515.png)
+
 <font size=4>4. 输入 passwd 修改root用户密码  ;此时会给你提一个警告，是因为密码强度太弱了，我们目前个人用的话不用管</font>
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20201114224318352-1489652040.png)
+
 <font size=4>5. 输入touch /.autorelabel</font>
 
 <font size=4>6. 输入 exit 退出</font>

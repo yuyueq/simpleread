@@ -1,11 +1,4 @@
----
-title: Linux系统中有趣的命令（可以玩小游戏）
-date: 2020-08-19 11:36:09.0
-updated: 2022-01-21 11:38:42.021
-url: /archives/linux-xi-tong-zhong-you-qu-de-ming-ling--ke-yi-wan-xiao-you-xi-
-categories: Linux
-tags: 学习记录 | Linux
----
+
 
 # Linux系统中有趣的命令（可以玩小游戏）
 
