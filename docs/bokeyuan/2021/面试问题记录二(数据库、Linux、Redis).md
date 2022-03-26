@@ -1,13 +1,3 @@
----
-title: 面试问题记录 二 (数据库、Linux、Redis)
-date: 2021-07-31 14:05:26.0
-updated: 2022-01-21 14:20:23.183
-url: /archives/mian-shi-wen-ti-ji-lu-er--shu-ju-ku-linuxredis
-categories: Java | 面试
-tags: 问题记录 | 面试
----
-
-
 
 > 面试问题记录 二 (数据库、Linux、Redis)
 
@@ -43,13 +33,24 @@ tags: 问题记录 | 面试
 ## 6.三大范式知道吗？
 
 答：第一范式是表示列的原子性，保证每一列都是最小单元，不能再分割了；第二范式是在第一范式的基础上建立的，每一列都要和主键相关，主要针对联合主键而言，就是每个表只描述一件事情；第三范式确保满足第二范式，每一列都和主键直接相关，而不是间接相关，也就是避免数据冗余。
-**具体可参考下面两篇文章**：《[数据库设计三大范式](https://www.cnblogs.com/linjiqin/archive/2012/04/01/2428695.html) 》     《[数据库范式那些事](https://www.cnblogs.com/CareySon/archive/2010/02/16/1668803.html)》
-**面试文章**：[数据库面试题](https://juejin.cn/post/6844903569632526343#heading-2)
+
+**具体可参考下面两篇文章**：
+
+[数据库设计三大范式](https://www.cnblogs.com/linjiqin/archive/2012/04/01/2428695.html)
+
+[数据库范式那些事](https://www.cnblogs.com/CareySon/archive/2010/02/16/1668803.html)
+
+**面试文章**：
+
+[数据库面试题](https://juejin.cn/post/6844903569632526343#heading-2)
 
 ## 7.它的索引是怎么实现的？
 
 答：快速定位表中内容的一种机制，帮助MySQL高效获取数据的数据结构。索引主要有四种，一主键索引Primary Key，二唯一索引Unique，三常规索引index，四全文索引FullText。而且mysql5.6以前的版本只有MyIsam支持全文索引，之后的话，两种数据引擎都支持全文索引，且字段数据类型为char，varchar、text及其系列的数据类型。
-**可参考文章**：[漫谈数据库索引](https://www.cnblogs.com/morvenhuang/archive/2009/03/30/1425534.html)
+
+**可参考文章**：
+
+[漫谈数据库索引](https://www.cnblogs.com/morvenhuang/archive/2009/03/30/1425534.html)
 
 ------
 
@@ -66,7 +67,12 @@ tags: 问题记录 | 面试
 ## 1.Redis是什么？为什么用它？
 
 答：redis是基于内存可持久化的日志型、key-value型数据库；首先就是它可以做高速缓存，而且有多种数据类型，支持事务，其次可以简单实现消息队列和session共享；redis的话也是针对一些数据量不是很大，访问频繁的数据。这样访问数据的话，就会变得快而且安全。
-可参考文章：《[Redis面试题](https://juejin.cn/post/6844904127055527950)》        《[为什么要用Redis](https://juejin.cn/post/6844903641145425927)》
+
+可参考文章：
+
+[Redis面试题](https://juejin.cn/post/6844904127055527950)
+
+[为什么要用Redis](https://juejin.cn/post/6844903641145425927)
 
 ## 2.Redis支持的数据类型有哪些？
 
@@ -75,7 +81,9 @@ tags: 问题记录 | 面试
 ## 3.缓存雪崩、缓存穿透、缓存击穿可以解释一下吗？
 
 答：首先缓存是这样
+
 ![image](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210731173315276-617407316.png)
+
 缓存雪崩：缓存中大量key同时失效，导致大量请求打在数据库上，导致数据库承受不住，宕机；还有就是缓存服务器崩了。可以使用热点数据永不失效、排队、限流、降级、主从+哨兵模式，这方面并未有做过深的探究。
 缓存击穿：和雪崩相反，当某些超热点的数据在缓存过期瞬间打在数据库上，使数据库压力过重，崩溃。可以将热点数据设置永不过期，或者在拿数据的时候加互斥锁。
 缓存穿透：如果缓存和数据库都没有的数据记录，被频繁的请求和调用，导致数据库中没有数据，缓存也没法更新数据；这样的方式也被用于恶意攻击，不走寻常路。可以在后端做数据校验，增添过滤器。
@@ -91,7 +99,11 @@ tags: 问题记录 | 面试
 
 ## 1.快速排序是怎样的？
 
-答：参考：《[十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/articles/7674659.html)》，《[玩转Java快速排序](https://juejin.cn/post/6844903642042990599)》
+参考：
+
+[十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/articles/7674659.html)
+
+[玩转Java快速排序](https://juejin.cn/post/6844903642042990599)
 
 ## 2.说一下HashMap？
 

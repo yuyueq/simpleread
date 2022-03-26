@@ -10,7 +10,8 @@
 
 window下安装其实是很简单的
 
-## 1、去官网下载安装（http://nginx.org/en/download.html）
+## 1、去官网下载安装
+**http://nginx.org/en/download.html**
 
 这里我选择的1.18.0版本，可自行选择
 

@@ -10,7 +10,7 @@
 </p>
 
 <a href="https://github.com/yuyueq" target="_blank">
-	<img src="https://pic.imgdb.cn/item/5f6572d3160a154a677dc43a.jpg" width=""/>
+	<img src="https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/eo2z7k.jpg" width=""/>
 </a>
 
 ---

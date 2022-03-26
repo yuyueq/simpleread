@@ -256,7 +256,7 @@ public class ServiceAspect {
 
 这块的话是简单入了个门，所以我是在B站上找的“狂神说”的视频，至于视频中的笔记，网上也是一搜一大堆
 这里的话贴一个比较全面的笔记链接：https://blog.csdn.net/qq_21197507/article/details/115076913
-![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210926150409821-1023423078.png)
+![image](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20210926150409821-1023423078.png)
 
 ## 体会
 
@@ -267,8 +267,8 @@ RestfulApi:https://restfulapi.cn/
 
 MVP：https://choerodon.io/zh/blog/mvp/
 
-![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210926150353022-2086684446.png)
-![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210926150357772-2137346936.png)
+![image](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20210926150409821-1023423078.png)
+![image](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20210926150357772-2137346936.png)
 
 
 ---
@@ -303,37 +303,33 @@ MVP：https://choerodon.io/zh/blog/mvp/
 
 # 最近看到的一些文章分享
 
-[**羊哥最近看了上百封简历，发现很多小可爱技术词汇都乱拼**](https://mp.weixin.qq.com/s/q5gPSIiJqVvbI6Xa4dMXwA)
+[羊哥最近看了上百封简历，发现很多小可爱技术词汇都乱拼](https://mp.weixin.qq.com/s/q5gPSIiJqVvbI6Xa4dMXwA)
 
-[**Layui的落幕，是否预示一个时代的结束？**](https://www.cnblogs.com/mqingqing123/p/15329717.html)
+[Layui的落幕，是否预示一个时代的结束？](https://www.cnblogs.com/mqingqing123/p/15329717.html)
 
 其实看到官网通知很及时，因为我当时正在看文档，没想到出了事，个人还是很意外吧，毕竟自己才刚开始
 打算去学着用，因为是感觉挺方便的，虽然没有vue和elementUI的好，但各有各的好处吧，只不过就是有点遗憾
 没有早接触作者这么优秀的技术作品。
 
 
-[**java学成什么样子可以出去实习**？](https://www.zhihu.com/question/324692823/answer/1995317884)
+[java学成什么样子可以出去实习？](https://www.zhihu.com/question/324692823/answer/1995317884)
 
-[**熟练掌握 MyBatis-Plus，这一篇就够了！**](https://mp.weixin.qq.com/s/fnoRa3zNcTp_3wFC3UENXw)
+[熟练掌握 MyBatis-Plus，这一篇就够了！](https://mp.weixin.qq.com/s/fnoRa3zNcTp_3wFC3UENXw)
 
-[**Spring最常用的7大类注解，史上最强整理！**](https://mp.weixin.qq.com/s/6XIYt6GrU81RD7chOxf5ow)
+[**Spring最常用的7大类注解，史上最强整理！](https://mp.weixin.qq.com/s/6XIYt6GrU81RD7chOxf5ow)
 
 [**何为架构？**](https://www.cnblogs.com/wyq178/p/12151160.html)
 
-[**简单说一下Kafka**](https://mp.weixin.qq.com/s/v72-lh5W_L34sd3OtCrvlg)
+[简单说一下Kafka](https://mp.weixin.qq.com/s/v72-lh5W_L34sd3OtCrvlg)
 
-[**简单吹一下微服务**](https://mp.weixin.qq.com/s/rFHLt_jKLIsKTpP1OcxY6w)
+[简单吹一下微服务](https://mp.weixin.qq.com/s/rFHLt_jKLIsKTpP1OcxY6w)
 
-**Debug调试**![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210926150502366-273354169.png)
+**Debug调试**!
+
+![image](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20210926150502366-273354169.png)
 
 
 # 最后
 基本上也就这些内容了，所以接下来，还要通过一些的实践内容去体会这些技术，不然仅仅只是看过而已。
 共勉！
 “他乡纵有当头月，不及家乡一盏灯”
-
-**贴几张图**
-![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210926150240492-1775559513.jpg)
-![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210926150313255-1475627138.png)
-
-![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210926150320346-622001968.jpg)

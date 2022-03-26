@@ -121,7 +121,7 @@ mysql -uroot -p Enter password: <输入你刚才新设的密码>
 
 ## 一、去查看mysql数据库中user表
 这是我安装的新的本地数据库中user的原始信息列之一也就是root用户
-![](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210903151038809-1082567335.png)
+![](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20210903151038809-1082567335.png)
 那远程服务器上的怎么看？
 **第一种方法**：把“skip-grant-tables”这句跳过权限验证在上面我提到的那个文件中加上，然后使用sql语句去查看。
 **第二种方法**：依旧把上面这个语句加上，只不过这次我们在远程去看，也就是像Navicat这种图形化界面去看，看看到底自己表中信息是否缺失root用户信息。
@@ -219,35 +219,49 @@ SET FOREIGN_KEY_CHECKS = 1;
 > 解决Navicat 出错:1130-host . is not allowed to connect to this MySql server,MySQL
 >1. 改表法。
 可能是你的帐号不允许从远程登陆，只能在localhost。这个时候只要在localhost的那台电脑，登入mysql后，更改 "mysql" 数据库里的 "user" 表里的 "host" 项，从"localhost"改称"%"
-![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210903153000890-371107942.png)
-mysql -u root -p
-mysql>use mysql;
-mysql>update user set host = '%' where user = 'root';
-mysql>select host, user from user;
-注：个人觉得不太适用！
+
+![image](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20210903153000890-371107942.png)
+
+> mysql -u root -p 
+> 
+> mysql>use mysql; 
+> 
+> mysql>update user set host = '%' where user = 'root'; 
+> 
+> mysql>select host, user from user;
+> 
+>注：个人觉得不太适用！
 
 >2. 授权法。
 
->i.你想myuser使用mypassword从任何主机连接到mysql服务器的话。
-GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+>i.你想myuser使用mypassword从任何主机连接到mysql服务器的话。 
+> 
+>GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
 FLUSH   PRIVILEGES;
+> 
 
->ii.如果你想允许用户myuser从ip为192.168.1.6的主机连接到mysql服务器，并使用mypassword作为密码
-GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'192.168.1.3' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+>ii.如果你想允许用户myuser从ip为192.168.1.6的主机连接到mysql服务器，并使用mypassword作为密码 
+> 
+> GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'192.168.1.3' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
 FLUSH   PRIVILEGES;
 
 >iii.如果你想允许用户myuser从ip为192.168.1.6的主机连接到mysql服务器的dk数据库，并使用mypassword作为密码
-GRANT ALL PRIVILEGES ON dk.* TO 'myuser'@'192.168.1.3' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+> 
+> GRANT ALL PRIVILEGES ON dk.* TO 'myuser'@'192.168.1.3' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
 FLUSH   PRIVILEGES;
 
 >我用的 i 方法,最后执行一个语句 mysql>FLUSH RIVILEGES 使修改生效.就可以了
 另外一种方法,不过我没有亲自试过的,在csdn.net上找的,可以看一下.
-在安装mysql的机器上运行：
-1、d:/mysql/bin/>mysql   -h   localhost   -u   root  //这样应该可以进入MySQL服务器
-2、mysql>GRANT   ALL   PRIVILEGES   ON   *.*   TO   'root'@'%'   WITH   GRANT   OPTION  //赋予任何主机访问数据的权限
-3、mysql>FLUSH   PRIVILEGES  //修改生效
-4、mysql>EXIT  //退出MySQL服务器
-这样就可以在其它任何的主机上以root身份登录啦！
+在安装mysql的机器上运行： 
+> 1、d:/mysql/bin/>mysql   -h   localhost   -u   root  //这样应该可以进入MySQL服务器
+> 
+>2、mysql>GRANT   ALL   PRIVILEGES   ON   *.*   TO   'root'@'%'   WITH   GRANT   OPTION  //赋予任何主机访问数据的权限
+> 
+>3、mysql>FLUSH   PRIVILEGES  //修改生效 
+> 
+> 4、mysql>EXIT  //退出MySQL服务器 
+> 
+>这样就可以在其它任何的主机上以root身份登录啦！
 
 
 

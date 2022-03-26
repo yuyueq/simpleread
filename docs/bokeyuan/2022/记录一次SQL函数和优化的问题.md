@@ -285,7 +285,7 @@ mysql> SELECT NULLIF(1,2);
 | [PERIOD_ADD()](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_period-add) | 为年月添加期间                                               |
 | [PERIOD_DIFF()](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_period-diff) | 返回期间之间的月数                                           |
 | [QUARTER()](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_quarter) | 从日期参数返回季度                                           |
-| [SEC_TO_TIME()](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_sec-to-time) | 将秒转换为 'hh:mm:ss' 格式                                   |
+| [SEC_TO_TIME()](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_sec-to-time) | 将秒转换为 'hh: mm:ss' 格式                                   |
 | [SECOND()](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_second) | 返回第二个 (0-59)                                            |
 | [STR_TO_DATE()](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_str-to-date) | 将字符串转换为日期                                           |
 | [SUBDATE()](https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_subdate) | 使用三个参数调用时 DATE_SUB() 的同义词                       |
@@ -326,7 +326,7 @@ mysql> SELECT NULLIF(1,2);
 + **及时给数据库表和字段增添注释**
 + **TIMESTAMP(4 个字节) 或 DATETIME 类型 (8 个字节) 存储时间**
   + 两者比时间戳更直观，但TIMESTAMP会有2038年的问题，
-  + TIMESTAMP具有'1970-01-01 00:00:01'UTC 到'2038-01-19 03:14:07'UTC 的范围
+  + TIMESTAMP具有'1970-01-01 00: 00:01'UTC 到'2038-01-19 03: 14:07'UTC 的范围
   + 我个人是比较倾向于时间戳的，数据库中用bigint存储，编程中用Long值传递，至于前端展示就在前端做处理，很方便，就是数据库查看时间的时候不直观
   + [mysql 数据库存时间最好是时间戳还是格式的时间](https://segmentfault.com/q/1010000000655428/)
 
@@ -334,10 +334,10 @@ mysql> SELECT NULLIF(1,2);
 > (默认情况下，每个连接的当前时区是服务器的时间。时区可以在每个连接的基础上设置。只要时区设置保持不变，你就会得到与你存储的相同的值。
 > 如果你存储一个TIMESTAMP值，然后改变时区并检索该值，检索到的值与你存储的值不同。出现这种情况是因为在两个方向的转换中没有使用相同的时区。当前的时区可以作为time_zone系统变量的值。
 > 要注意MySQL中日期值解释的某些属性。
-> MySQL允许对指定为字符串的值采用 "宽松 "格式，其中任何标点符号都可以用作日期部分或时间部分之间的分隔符。在某些情况下，这种语法可能具有欺骗性。例如，像'10:11:12'这样的值可能看起来像一个时间值，因为有:，但如果在日期上下文中使用，则被解释为年份'2010-11-12'。值'10:45:15'被转换为'0000-00-00'，因为'45'不是一个有效的月份。
+> MySQL允许对指定为字符串的值采用 "宽松 "格式，其中任何标点符号都可以用作日期部分或时间部分之间的分隔符。在某些情况下，这种语法可能具有欺骗性。例如，像'10: 11:12'这样的值可能看起来像一个时间值，因为有:，但如果在日期上下文中使用，则被解释为年份'2010-11-12'。值'10: 45:15'被转换为'0000-00-00'，因为'45'不是一个有效的月份。
 > 在日期和时间部分与小数秒部分之间，唯一可识别的分隔符是小数点。
 > 服务器要求月和日的值是有效的，而不仅仅是分别在1到12和1到31的范围内。在禁用严格模式的情况下，无效的日期如'2004-04-31'被转换为'0000-00-00'并产生一个警告。在启用严格模式的情况下，无效的日期产生一个错误。要允许这样的日期，请启用ALLOW_INVALID_DATES。参见第5.1.10节 "服务器SQL模式"，以了解更多信息。
-> MySQL不接受在日或月列中包含零的TIMESTAMP值或不是有效日期的值。这个规则的唯一例外是特殊的 "零 "值"0000-00-00 00:00:00"，如果SQL模式允许这个值。准确的行为取决于是否启用了严格的SQL模式和NO_ZERO_DATE SQL模式；参见章节5.1.10, "服务器SQL模式"。
+> MySQL不接受在日或月列中包含零的TIMESTAMP值或不是有效日期的值。这个规则的唯一例外是特殊的 "零 "值"0000-00-00 00: 00:00"，如果SQL模式允许这个值。准确的行为取决于是否启用了严格的SQL模式和NO_ZERO_DATE SQL模式；参见章节5.1.10, "服务器SQL模式"。
 > 包含2位数年值的日期是模糊的，因为世纪是未知的。MySQL使用这些规则解释2位数的年值。
 > 00-69范围内的年值成为2000-2069。
 > 在70-99范围内的年值成为1970-1999。

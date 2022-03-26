@@ -1,8 +1,12 @@
+>Layui引起的对前端的一次记录
+
 # 前言
 首先会做这次记录，也是因为自己也是第一次去接触这个框架，以前总是听说，并没有去用过。这次出于实习的原因，去学习了一下Layui这个“面向后端开发者的框架”。其次，此篇记录仅供参考，毕竟我也不是开发者，所以不能保证文章引用的内容以及自己的理解是否正确，请自行决断一些内容的正确性。
 前段时间看到一个不错的博客是个人写的关于前端面试的还是比较全面基础的（虽然个人是后端，但是如果有学前端的看到这篇随笔，可以当做参考一下）
 在这里贴出来：
+
 【**GitHub**】：https://github.com/WindrunnerMax/EveryDay
+
 【**博客**】https://blog.touchczy.top/#/
 
 ---
@@ -86,48 +90,51 @@ js加载的时候浏览器会停止页面渲染，加载文件越多，页面失
 
 > CMD 即Common Module Definition通用模块定义，CMD规范是国内发展出来的，就像AMD有个requireJS，CMD有个浏览器的实现SeaJS，SeaJS要解决的问题和requireJS一样，只不过在模块定义方式和模块加载（可以说运行、解析）时机上有所不同
 
-**最后可参考这些文章（仔细甄别内容正确性，因为我也是做了个参考，并未保证这些文章百分百正确）：
-[前端模块化](https://www.cnblogs.com/dolphinX/p/4381855.html "前端模块化")**，
-[**谈谈我的理解-组件化/模块化**](https://www.jianshu.com/p/79e4df63f31f "谈谈我的理解-组件化/模块化")，
-[**对前端工程化、模块化、组件化开发的理解**](https://blog.csdn.net/candyHZhou/article/details/108071230 "对前端工程化、模块化、组件化开发的理解")。
+**最后可参考这些文章（仔细甄别内容正确性，因为我也是做了个参考，并未保证这些文章百分百正确）**：
+
+[前端模块化](https://www.cnblogs.com/dolphinX/p/4381855.html "前端模块化")，
+
+[谈谈我的理解-组件化/模块化](https://www.jianshu.com/p/79e4df63f31f "谈谈我的理解-组件化/模块化")，
+
+[对前端工程化、模块化、组件化开发的理解](https://blog.csdn.net/candyHZhou/article/details/108071230 "对前端工程化、模块化、组件化开发的理解")。
 
 
 
 ---
 
 # 前端框架官方文档
-##【[Vue.js](https://cn.vuejs.org/)】
+## [Vue.js](https://cn.vuejs.org/)
 ```
 https://vuejs.bootcss.com/guide/
 https://cn.vuejs.org/
 ```
-##【[ElementUI](https://element-plus.gitee.io/#/zh-CN "ElementUI")】
+## [ElementUI](https://element-plus.gitee.io/#/zh-CN "ElementUI")
 ```
 https://element-plus.gitee.io/#/zh-CN
 ```
 
-##【[Layui](https://www.layui.com/ "Layui")】
+## [Layui](https://www.layui.com/ "Layui")
 ```
 https://www.layui.com/
 ```
 
-####【[妹子UI（amazeui）](http://amazeui.shopxo.net/ "妹子UI（amazeui）")】
+## [妹子UI（amazeui）](http://amazeui.shopxo.net/ "妹子UI（amazeui）")
 ```
 http://amazeui.shopxo.net/
 ```
-##【[Semantic UI](https://semantic-ui.com/ "Semantic UI")】
+## [Semantic UI](https://semantic-ui.com/ "Semantic UI")
 ```
 https://semantic-ui.com/
 ```
-##【[EasyUI](https://www.jeasyui.net/ "EasyUI")】
+## [EasyUI](https://www.jeasyui.net/ "EasyUI")
 ```
 https://www.jeasyui.net/
 ```
-##【[BootStrap](https://www.bootcss.com/ "BootStrap")】
+## [BootStrap](https://www.bootcss.com/ "BootStrap")
 ```
 https://www.bootcss.com/
 ```
-##【[Bootstrap可视化布局](https://www.bootcss.com/p/layoutit/ "Bootstrap可视化布局")】
+## [Bootstrap可视化布局](https://www.bootcss.com/p/layoutit/ "Bootstrap可视化布局")
 ```
 https://www.bootcss.com/p/layoutit/
 ```

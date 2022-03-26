@@ -1,13 +1,3 @@
----
-title: 面试问题记录 三 (JavaWeb、JavaEE)
-date: 2021-08-02 14:07:20.0
-updated: 2022-01-21 14:20:13.203
-url: /archives/mian-shi-wen-ti-ji-lu-san-javawebjavaee
-categories: Java | 面试
-tags: 问题记录 | 面试
----
-
-
 
 # 前言
 
@@ -71,12 +61,14 @@ tags: 问题记录 | 面试
 ### 1.说一下IOC
 
 答：IOC就是控制反转，控制就是传统的是由程序本身创建对象，现在交给spring容器去创建，反转就是程序不去创建对象而是去被动的接收对象；而具体的一种实现方式就是依赖注入，注入方式的话就有构造器注入（默认无参构造，有参通过下标、参数名、类型赋值）和setter方式注入、注解方式注入；而依赖就是bean对象的创建是由容器完成的，注入就是bean对象中的属性都由容器来注入。最终还是为了解耦合。
+
 **参考文章**：《Spring：源码解读Spring IOC原理》https://www.cnblogs.com/ITtangtang/p/3978349.html
 
 ### 2.说一下AOP
 
 答：理解AOP的话，就得首先对Java的代理模式有认识；代理模式的话可以去看一下这个狂神的视频【https://www.bilibili.com/video/BV1WE411d7Dv?p=17】
 AOP面向切面编程，简单说就是那些与业务无关，却为业务模块所共同调用的逻辑或责任封装起来，便于减少系统的重复代码，降低模块之间的耦合度，并有利于未来的可操作性和可维护性
+
 **参考文章**：《Spring3：AOP》 https://www.cnblogs.com/xrq730/p/4919025.html
 
 ### 3.Bean的作用域
@@ -222,7 +214,12 @@ xxxxProperties: 封装配置文件中相关属性；
 
 ```
 
-**参考文章**：《[这样讲 SpringBoot 自动配置原理，你应该能明白了吧](https://juejin.cn/post/6844903849178873870)》《[SpringBoot自动配置原理](https://www.cnblogs.com/wuzhenzhao/p/9151673.html)》
+**参考文章**：
+
+[这样讲 SpringBoot 自动配置原理，你应该能明白了吧](https://juejin.cn/post/6844903849178873870)
+
+[SpringBoot自动配置原理](https://www.cnblogs.com/wuzhenzhao/p/9151673.html)
+
 **本人无打广告嫌疑**！！！！
 
 ------
@@ -232,10 +229,15 @@ xxxxProperties: 封装配置文件中相关属性；
 ## 1.说说JVM内存结构？
 
 答：ProcessOn上找的一张图，看标注应该是尚硅谷的图，感觉这个图还是能初步认识JVM。
+
 ![image](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210802195342905-975321220.png)
+
 还有三张图链接放这，自行查看，感觉还是解释的比较全面。
+
 **_JVM内存模型完整版【_**[https://www.processon.com/view/5ea7a1b9e401fd21c196eb17?fromnew=1](https://www.processon.com/view/5ea7a1b9e401fd21c196eb17?fromnew=1)**_】_**
+
 **_JVM相关知识_**【[https://www.processon.com/view/5ec5d7c60791290fe0768668?fromnew=1](https://www.processon.com/view/5ec5d7c60791290fe0768668?fromnew=1)】
+
 **_JVM【_**[https://www.processon.com/view/5c749debe4b0f9fba6921d15?fromnew=1](https://www.processon.com/view/5c749debe4b0f9fba6921d15?fromnew=1)**_】_**
 
 

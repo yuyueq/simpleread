@@ -3,11 +3,16 @@
 
 ---
 
-**2021年9月3日 新增学习Git文档网站
-Progit：https://www.progit.cn/#_pro_git
-Gitbook: https://git-scm.com/book/zh/v2**
+**2021年9月3日 新增学习Git文档网站**
+
+**Progit**：https://www.progit.cn/#_pro_git
+
+**Gitbook**: https://git-scm.com/book/zh/v2
+
 **CSNote：http://www.cyc2018.xyz/%E5%85%B6%E5%AE%83/%E7%BC%96%E7%A0%81%E5%AE%9E%E8%B7%B5/Git.html**
+
 **在线实践网站：https://learngitbranching.js.org/?locale=zh_CN**
+
 **JavaGuide：https://snailclimb.gitee.io/javaguide/#/docs/tools/Git**
 
 ---
@@ -21,9 +26,10 @@ Gitbook: https://git-scm.com/book/zh/v2**
 \etc\gitconfig  ：Git 安装目录下的 gitconfig     --system 系统级
 C:\Users\Administrator\ .gitconfig    只适用于当前登录用户的配置  --global 全局
 ```
-注意：这里的Administrator是当前用户名，也就是你开机用户名，有的人可能设置了自己的用户名，所以路径有所不同,不然有的人找不到。
+**注意**：这里的Administrator是当前用户名，也就是你开机用户名，有的人可能设置了自己的用户名，所以路径有所不同,不然有的人找不到。
 一般你的“用户”文件夹都是这些内容：
-![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210901135546560-49197056.png)
+
+![image](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20210901135546560-49197056.png)
 
 ---
 
@@ -129,9 +135,10 @@ ssh-keygen
 
 # 六、Idea操作
 可以去看看这篇文章：https://www.cnblogs.com/tomingto/p/11727920.html
+
 其实基本都是比较简单的操作，基本是commit和push。而且每次需要代码的更新也都是些这些操作
 
 # 最后
 像这些内容其实网上也有很多文章去解释，而且比较全面，我这里仅做一个基本命令的记录，避免有时候记不起来找不到相关命令。
 贴一张图（**如有侵权，联系立删！**）：
-![image](https://img2020.cnblogs.com/blog/2031154/202109/2031154-20210901140009211-1526956693.png)
+![image](https://unleashed.oss-cn-beijing.aliyuncs.com/win10yuyueq/2031154-20210901140009211-1526956693.png)

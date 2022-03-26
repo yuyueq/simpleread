@@ -39,36 +39,68 @@
 ## VMware的安装设置
 
 一、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225221739-392202472.png)
+
 二、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225229869-1040303041.png)
+
 三、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225312494-315309124.png)
+
+
 四、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225320903-1457689727.png)
+
 五、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225328503-2057096050.png)
+
 六、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225413168-1136596255.png)
+
 七、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225420302-1241072182.png)
+
 八、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225430047-1446989778.png)
+
 九、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225435594-994875295.png)
+
 十、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225703483-1141056651.png)
+
 十一、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225712775-1676893859.png)
+
 十二、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225724082-98588657.png)
+
 十三、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225738545-739859112.png)
+
 十四、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225748555-1177314252.png)
+
 十五、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615225759377-911109181.png)
+
 十六、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615230119666-283609178.png)
 
 
@@ -97,17 +129,23 @@
 
 
 二十三、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615230205916-1813187329.png)
+
 二十四、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615230226522-1542896624.png)
 
 
 二十五、
+
 弹出警示框选择继续
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615230232383-56194567.png)
 
 
 二十六、
+
 ![](https://unleashed.oss-cn-beijing.aliyuncs.com/picgo/2031154-20210615230237542-646471421.png)
 
 # 最后

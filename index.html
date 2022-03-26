@@ -134,9 +134,9 @@
         }
 */
         /* h2字体设置 */
-        h2 span {
+        h1 span {
             display: inline-block;
-            background: rgb(66, 185, 131);
+            background: #1e99ed;
             color: #ffffff;
             padding: 10px 16px;
             border-radius: 5px;
@@ -144,9 +144,9 @@
             font-size: 30px;
         }
 
-        h3 span {
+        h2 span {
             display: inline-block;
-            background: rgb(66, 185, 131);
+            background: #1e99ed;
             color: #ffffff;
             padding: 10px 16px;
             border-radius: 5px;
@@ -154,15 +154,15 @@
             font-size: 20px;
         }
 
-        h4 span {
-            display: inline-block;
-            background: rgb(93, 225, 165);
-            color: #ffffff;
-            padding: 10px 16px;
-            border-radius: 5px;
-            box-shadow: 1px 1px 3px black;
-            font-size: 10px;
-        }
+        /*h4 span {*/
+        /*    display: inline-block;*/
+        /*    background: rgb(93, 225, 165);*/
+        /*    color: #ffffff;*/
+        /*    padding: 10px 16px;*/
+        /*    border-radius: 5px;*/
+        /*    box-shadow: 1px 1px 3px black;*/
+        /*    font-size: 10px;*/
+        /*}*/
 
         /*!* 导航栏(不会因下拉而消失) *!*/
         /*.app-nav {*/
@@ -228,7 +228,7 @@
 
         /* 加粗 */
         .markdown-section strong {
-            color: rgb(0, 123, 232);
+            color: rgb(17, 19, 16);
             font-weight: bolder;
         }
 
@@ -725,7 +725,7 @@
         var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
         var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
         var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
-        document.getElementById("sitetime").innerHTML = " 本站已安全运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分 " + diffSeconds + " 秒 ";
+        // document.getElementById("sitetime").innerHTML = " 本站已安全运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分 " + diffSeconds + " 秒 ";
     }
 
     siteTime();
@@ -768,13 +768,7 @@
 <script src="./resource/prism-bash.min.js"></script>
 <script src="./resource/prism-sql.min.js"></script>
 <script src="./resource/prism-javascript.min.js"></script>
-<script src="./resource/prism-css.min.js"></script>
 
-<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
-<!--分页插件-->
-<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
 
 </body>
