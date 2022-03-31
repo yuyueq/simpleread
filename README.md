@@ -17,6 +17,10 @@
 
 <font size=6>**📌更新记录**</font>
 >
+>2022/3/31   13:47   新增黑马的基础进阶笔记
+> 
+>2022/3/28   12:00   新增黑马的JavaSe笔记
+> 
 >2022/3/26   18:34   博客园的文章排版&图片bugfix
 > 
 >2022/3/25   23:00   更换本地vue.css,新增《On Java8》中文版文档，更换结构
@@ -198,6 +202,30 @@
 #### 进阶
 
 📜[day01_Object类、常用API](docs/yuque/javase/j1.md)
+
+📜[day02_Collection、泛型](docs/yuque/javase/j2.md)
+
+📜[day03_List、Set、数据结构、Collections](docs/yuque/javase/j3.md)
+
+📜[day04_Map，斗地主案例](docs/yuque/javase/j4.md)
+
+📜[day05_异常，线程](docs/yuque/javase/j5.md)
+
+📜[day06_线程、同步](docs/yuque/javase/j6.html)
+
+📜[day07_等待与唤醒案例、线程池、Lambda表达式](docs/yuque/javase/j7.md)
+
+📜[day08_File类、递归](docs/yuque/javase/j8.md)
+
+📜[day09_字节流、字符流](docs/yuque/javase/j9.md)
+
+📜[day10_缓冲流、转换流、序列化流、Files](docs/yuque/javase/j10.md)
+
+📜[day11_网络编程](docs/yuque/javase/j11.md)
+
+📜[day12_函数式接口](docs/yuque/javase/12.html)
+
+📜[day13_Stream流、方法引用](docs/yuque/javase/13.html)
 
 
 
